@@ -1,8 +1,8 @@
 {
   "aluno-1": {
-    "nome": {},
-    "email-insper": {},
-    "user-github": {}
+    "nome": {"Abel Cavalcante de Andrade Neto"},
+    "email-insper": {"abelcan@al.insper.edu.br"},
+    "user-github": {"FidyBack"}
   },
   "aluno-2": {
     "nome": {},
