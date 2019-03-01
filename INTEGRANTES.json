@@ -5,9 +5,9 @@
     "user-github": {"FidyBack"}
   },
   "aluno-2": {
-    "nome": {},
-    "email-insper": {},
-    "user-github": {}
+    "nome": {"Luiz Vitor Germanos Teixeira"},
+    "email-insper": {"luizvgt@al.insper.edu.br"},
+    "user-github": {"luvi01"}
   },
   "aluno-3": {
     "nome": {"Pedro Henrique Carvalho Daher"},
