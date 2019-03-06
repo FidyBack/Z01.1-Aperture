@@ -14,6 +14,5 @@ end entity;
 architecture rtl of DMux4Way is
 begin
 
-
 end architecture;
 

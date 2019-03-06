@@ -16,7 +16,7 @@ entity Mux8Way16 is
 end entity;
 
 architecture arch of Mux8Way16 is
+	
 begin
-
 
 end architecture;
