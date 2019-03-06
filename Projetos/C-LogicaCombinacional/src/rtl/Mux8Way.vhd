@@ -18,5 +18,4 @@ end entity;
 architecture arch of Mux8Way is
 begin
 
-
 end architecture;
