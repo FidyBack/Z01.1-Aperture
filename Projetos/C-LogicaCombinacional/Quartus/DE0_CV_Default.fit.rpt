@@ -520,8 +520,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/borg/Desktop/Elements/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pin.
-
+The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pin.
 
 +------------------------------------------------------------------------------------------+
 ; Fitter Resource Usage Summary                                                            ;
@@ -1788,10 +1787,7 @@ Info: Quartus Prime Fitter was successful. 0 errors, 174 warnings
     Info: Elapsed time: 00:00:19
     Info: Total CPU time (on all processors): 00:00:26
 
-
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
 The suppressed messages can be found in /home/borg/Desktop/Elements/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg.
-
-

@@ -41,8 +41,8 @@ architecture rtl of TopLevel is
 -- implementacao
 ---------------
 begin
-	HEX0(1)<=SW(0);
-	HEX0(4)<=SW(0);
-
+	HEX0(1) <=SW(0);
+	HEX0(4) <=SW(0);
+	LEDR(0) <= SW(0);
 	
 end rtl;

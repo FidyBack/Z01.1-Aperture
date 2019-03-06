@@ -638,6 +638,7 @@ Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targe
 Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Desktop/Elements/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
 Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Desktop/Elements/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
     Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Desktop/Elements/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.

@@ -53,14 +53,14 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                            ;
-+------------------------------------------------------------------------------------------------------+
-; File Name                                                                                            ;
-+------------------------------------------------------------------------------------------------------+
-; /home/borg/Desktop/Elements/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sof ;
-; /home/borg/Desktop/Elements/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pof ;
-+------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                   ;
++---------------------------------------------------------------------------------------------+
+; File Name                                                                                   ;
++---------------------------------------------------------------------------------------------+
+; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sof ;
+; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pof ;
++---------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------+
@@ -77,8 +77,8 @@ refer to the applicable agreement for further details.
 ; Assembler Device Options: DE0_CV_Default.pof ;
 +--------------------+-------------------------+
 ; Option             ; Setting                 ;
-+--------------------+-------------------------+
-; JTAG usercode      ; 0x00000000              ;
++--------------------+-------------------------+        ;
+<<<<<<< HEAD
 ; Checksum           ; 0x74B36CB6              ;
 ; Compression Ratio  ; 3                       ;
 +--------------------+-------------------------+
