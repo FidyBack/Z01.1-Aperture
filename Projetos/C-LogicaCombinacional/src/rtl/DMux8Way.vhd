@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+ 
 entity DMux8Way is
 	port ( 
 			a:   in  STD_LOGIC;
