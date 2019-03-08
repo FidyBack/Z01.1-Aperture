@@ -18,4 +18,17 @@ end entity;
 architecture arch of Mux8Way is
 begin
 
+process(a,b,c,d,e,f,g,h,sel)
+begin
+	case sel is
+		when "000" => q <= a;
+		when "001" => q <= b;
+		when "010" => q <= c;
+		when "011" => q <= d;
+		when "100" => q <= e;
+		when "101" => q <= f;
+		when "110" => q <= g;
+		when others => q <= h;
+	end case;
+end process;
 end architecture;
