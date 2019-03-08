@@ -77,8 +77,7 @@ refer to the applicable agreement for further details.
 ; Assembler Device Options: DE0_CV_Default.pof ;
 +--------------------+-------------------------+
 ; Option             ; Setting                 ;
-+--------------------+-------------------------+        ;
-<<<<<<< HEAD
++--------------------+-------------------------+
 ; Checksum           ; 0x74B36CB6              ;
 ; Compression Ratio  ; 3                       ;
 +--------------------+-------------------------+
