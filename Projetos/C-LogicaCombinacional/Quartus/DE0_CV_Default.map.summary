@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Fri Mar  8 20:03:30 2019
+=======
+Analysis & Synthesis Status : Successful - Fri Mar  8 17:42:59 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : DE0_CV_Default
 Top-level Entity Name : TopLevel
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
+<<<<<<< HEAD
 Total pins : 52
+=======
+Total pins : 31
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

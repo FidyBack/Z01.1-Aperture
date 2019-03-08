@@ -1,5 +1,9 @@
 Assembler report for DE0_CV_Default
+<<<<<<< HEAD
 Fri Mar  8 20:04:43 2019
+=======
+Fri Mar  8 17:43:25 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -38,7 +42,11 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Fri Mar  8 20:04:43 2019 ;
+=======
+; Assembler Status      ; Successful - Fri Mar  8 17:43:25 2019 ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Revision Name         ; DE0_CV_Default                        ;
 ; Top-level Entity Name ; TopLevel                              ;
 ; Family                ; Cyclone V                             ;
@@ -68,8 +76,13 @@ refer to the applicable agreement for further details.
 +----------------+-----------------------------+
 ; Option         ; Setting                     ;
 +----------------+-----------------------------+
+<<<<<<< HEAD
 ; JTAG usercode  ; 0x00A663CD                  ;
 ; Checksum       ; 0x00A663CD                  ;
+=======
+; JTAG usercode  ; 0x004E3F03                  ;
+; Checksum       ; 0x004E3F03                  ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 +----------------+-----------------------------+
 
 
@@ -79,7 +92,11 @@ refer to the applicable agreement for further details.
 ; Option             ; Setting                 ;
 +--------------------+-------------------------+
 ; JTAG usercode      ; 0x00000000              ;
+<<<<<<< HEAD
 ; Checksum           ; 0x7411B1DD              ;
+=======
+; Checksum           ; 0x74B523EF              ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Compression Ratio  ; 3                       ;
 +--------------------+-------------------------+
 
@@ -90,14 +107,25 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Mar  8 20:04:37 2019
+=======
+    Info: Processing started: Fri Mar  8 17:43:20 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+<<<<<<< HEAD
     Info: Peak virtual memory: 981 megabytes
     Info: Processing ended: Fri Mar  8 20:04:43 2019
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
+=======
+    Info: Peak virtual memory: 951 megabytes
+    Info: Processing ended: Fri Mar  8 17:43:25 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 
 

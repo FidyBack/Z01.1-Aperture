@@ -1,5 +1,9 @@
 Flow report for DE0_CV_Default
+<<<<<<< HEAD
 Fri Mar  8 20:04:56 2019
+=======
+Fri Mar  8 17:43:30 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,16 +44,26 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Flow Status                     ; Successful - Fri Mar  8 20:04:43 2019       ;
+=======
+; Flow Status                     ; Successful - Fri Mar  8 17:43:25 2019       ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
+<<<<<<< HEAD
 ; Logic utilization (in ALMs)     ; 3,304 / 18,480 ( 18 % )                     ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 52 / 224 ( 23 % )                           ;
+=======
+; Logic utilization (in ALMs)     ; 9 / 18,480 ( < 1 % )                        ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 31 / 224 ( 14 % )                           ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
@@ -67,7 +81,11 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 03/08/2019 20:03:09 ;
+=======
+; Start date & time ; 03/08/2019 17:42:45 ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE0_CV_Default      ;
 +-------------------+---------------------+
@@ -78,7 +96,11 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value                        ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 102021908929880.155208618911750        ; --                                   ; --          ; --         ;
+=======
+; COMPILER_SIGNATURE_ID               ; 110073159329384.155207776510879        ; --                                   ; --          ; --         ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit                             ; --          ; --         ;
 ; FLOW_ENABLE_RTL_VIEWER              ; On                                     ; Off                                  ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                                   ; --          ; --         ;
@@ -104,11 +126,19 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 1105 MB             ; 00:00:38                           ;
 ; Fitter                    ; 00:01:04     ; 1.1                     ; 1894 MB             ; 00:02:10                           ;
 ; Assembler                 ; 00:00:06     ; 1.0                     ; 981 MB              ; 00:00:06                           ;
 ; TimeQuest Timing Analyzer ; 00:00:13     ; 1.6                     ; 1151 MB             ; 00:00:19                           ;
 ; Total                     ; 00:01:45     ; --                      ; --                  ; 00:03:13                           ;
+=======
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 1014 MB             ; 00:00:32                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 1831 MB             ; 00:00:27                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 951 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 1083 MB             ; 00:00:05                           ;
+; Total                     ; 00:00:44     ; --                      ; --                  ; 00:01:09                           ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

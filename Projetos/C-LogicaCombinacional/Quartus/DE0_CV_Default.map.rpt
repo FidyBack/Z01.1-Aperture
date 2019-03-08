@@ -1,5 +1,9 @@
 Analysis & Synthesis report for DE0_CV_Default
+<<<<<<< HEAD
 Fri Mar  8 20:03:31 2019
+=======
+Fri Mar  8 17:42:59 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -15,6 +19,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
+<<<<<<< HEAD
  10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
  11. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
  12. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
@@ -25,6 +30,11 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  17. Post-Synthesis Netlist Statistics for Top Partition
  18. Elapsed Time Per Partition
  19. Analysis & Synthesis Messages
+=======
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 
 
 
@@ -50,14 +60,22 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status     ; Successful - Fri Mar  8 20:03:30 2019       ;
+=======
+; Analysis & Synthesis Status     ; Successful - Fri Mar  8 17:42:59 2019       ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
+<<<<<<< HEAD
 ; Total pins                      ; 52                                          ;
+=======
+; Total pins                      ; 31                                          ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -166,6 +184,7 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
+<<<<<<< HEAD
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -275,6 +294,73 @@ refer to the applicable agreement for further details.
 ;          |sign_div_unsign_anh:divider| ; 1374 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Mod3|lpm_divide_75m:auto_generated|sign_div_unsign_anh:divider                       ; sign_div_unsign_anh ; work         ;
 ;             |alt_u_div_q2f:divider|    ; 1374 (1374)         ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Mod3|lpm_divide_75m:auto_generated|sign_div_unsign_anh:divider|alt_u_div_q2f:divider ; alt_u_div_q2f       ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------+---------------------+--------------+
+=======
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; ../src/TopLevel.vhd              ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd      ;         ;
+; ../src/rtl/Or16.vhd              ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd      ;         ;
+; ../src/rtl/Or8Way.vhd            ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd    ;         ;
+; ../src/rtl/Not16.vhd             ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd     ;         ;
+; ../src/rtl/Nor8Way.vhd           ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd   ;         ;
+; ../src/rtl/Nand.vhd              ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd      ;         ;
+; ../src/rtl/Mux16.vhd             ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd     ;         ;
+; ../src/rtl/Mux8Way16.vhd         ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd ;         ;
+; ../src/rtl/Mux8Way.vhd           ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd   ;         ;
+; ../src/rtl/Mux4Way16.vhd         ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd ;         ;
+; ../src/rtl/Mux4Way.vhd           ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd   ;         ;
+; ../src/rtl/Mux2Way.vhd           ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd   ;         ;
+; ../src/rtl/DMux8Way.vhd          ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd  ;         ;
+; ../src/rtl/DMux4Way.vhd          ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd  ;         ;
+; ../src/rtl/DMux2Way.vhd          ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd  ;         ;
+; ../src/rtl/And16.vhd             ; yes             ; User VHDL File  ; /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd     ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 9           ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 17          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 14          ;
+;     -- <=3 input functions                  ; 3           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 31          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[1]~input ;
+; Maximum fan-out                             ; 7           ;
+; Total fan-out                               ; 113         ;
+; Average fan-out                             ; 1.43        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |TopLevel                  ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 31   ; 0            ; |TopLevel           ; TopLevel    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -298,6 +384,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+<<<<<<< HEAD
 ; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopLevel|Number           ;
 ; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopLevel|Number           ;
 ; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopLevel|Number           ;
@@ -466,11 +553,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
+=======
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TopLevel|HEX2[2]          ;
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopLevel|HEX0[5]          ;
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopLevel|HEX1[0]          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+<<<<<<< HEAD
 ; arriav_lcell_comb     ; 6506                        ;
 ;     arith             ; 3110                        ;
 ;         0 data inputs ; 393                         ;
@@ -498,6 +594,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;                       ;                             ;
 ; Max LUT depth         ; 478.70                      ;
 ; Average LUT depth     ; 468.69                      ;
+=======
+; arriav_lcell_comb     ; 20                          ;
+;     normal            ; 20                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 3                           ;
+;         4 data inputs ; 14                          ;
+; boundary_port         ; 31                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.10                        ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 +-----------------------+-----------------------------+
 
 
@@ -506,7 +614,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
+<<<<<<< HEAD
 ; Top            ; 00:00:09     ;
+=======
+; Top            ; 00:00:00     ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 +----------------+--------------+
 
 
@@ -516,13 +628,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Mar  8 20:03:08 2019
+=======
+    Info: Processing started: Fri Mar  8 17:42:44 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd
+<<<<<<< HEAD
     Info (12022): Found design unit 1: TopLevel-rtl File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 126
     Info (12023): Found entity 1: TopLevel File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 22
+=======
+    Info (12022): Found design unit 1: TopLevel-rtl File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 33
+    Info (12023): Found entity 1: TopLevel File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 20
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
     Info (12022): Found design unit 1: Or16-arch File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 11
     Info (12023): Found entity 1: Or16 File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 4
@@ -571,6 +692,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/b
     Info (12022): Found design unit 1: And16-arch File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 11
     Info (12023): Found entity 1: And16 File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
+<<<<<<< HEAD
 Info (278001): Inferred 7 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 142
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 145
@@ -641,5 +763,42 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Processing ended: Fri Mar  8 20:03:31 2019
     Info: Elapsed time: 00:00:23
     Info: Total CPU time (on all processors): 00:00:38
+=======
+Info (10041): Inferred latch for "HEX2[0]" at TopLevel.vhd(90) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (10041): Inferred latch for "HEX2[1]" at TopLevel.vhd(90) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (10041): Inferred latch for "HEX2[2]" at TopLevel.vhd(90) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (10041): Inferred latch for "HEX2[3]" at TopLevel.vhd(90) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (10041): Inferred latch for "HEX2[4]" at TopLevel.vhd(90) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (10041): Inferred latch for "HEX2[5]" at TopLevel.vhd(90) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (10041): Inferred latch for "HEX2[6]" at TopLevel.vhd(90) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (10041): Inferred latch for "HEX1[0]" at TopLevel.vhd(72) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 72
+Info (10041): Inferred latch for "HEX1[1]" at TopLevel.vhd(72) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 72
+Info (10041): Inferred latch for "HEX1[2]" at TopLevel.vhd(72) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 72
+Info (10041): Inferred latch for "HEX1[3]" at TopLevel.vhd(72) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 72
+Info (10041): Inferred latch for "HEX1[4]" at TopLevel.vhd(72) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 72
+Info (10041): Inferred latch for "HEX1[5]" at TopLevel.vhd(72) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 72
+Info (10041): Inferred latch for "HEX1[6]" at TopLevel.vhd(72) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 72
+Info (10041): Inferred latch for "HEX0[0]" at TopLevel.vhd(54) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 54
+Info (10041): Inferred latch for "HEX0[1]" at TopLevel.vhd(54) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 54
+Info (10041): Inferred latch for "HEX0[2]" at TopLevel.vhd(54) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 54
+Info (10041): Inferred latch for "HEX0[3]" at TopLevel.vhd(54) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 54
+Info (10041): Inferred latch for "HEX0[4]" at TopLevel.vhd(54) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 54
+Info (10041): Inferred latch for "HEX0[5]" at TopLevel.vhd(54) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 54
+Info (10041): Inferred latch for "HEX0[6]" at TopLevel.vhd(54) File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 54
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 90
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 17 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1019 megabytes
+    Info: Processing ended: Fri Mar  8 17:42:59 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 
 
