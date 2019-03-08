@@ -10,19 +10,19 @@
     "user-github": {"luvi01"}
   },
   "aluno-3": {
-    "nome": {},
-    "email-insper": {},
-    "user-github": {},
+    "nome": {"Pedro Henrique Carvalho Daher"},
+    "email-insper": {"pedrohcd1@al.insper.edu.br"},
+    "user-github": {"phdaher"},
   },
   "aluno-4": {
-    "nome": {},
-    "email-insper": {},
-    "user-github": {}
+    "nome": {"Thiago Luigi Marinho de Mello"},
+    "email-insper": {"thiagolmm@al.insper.edu.br"},
+    "user-github": {"tluigimm"}
   },
   "aluno-5": {
-    "nome": {},
-    "email-insper": {},
-    "user-github": {}
+    "nome": {"Rodrigo de Jesus Oliveira Junior"},
+    "email-insper": {"rodrigojoj@al.insper.edu.br"},
+    "user-github": {"Rodrigo2104"}
   },
   "aluno-6": {
     "nome": {},
