@@ -31,6 +31,4 @@ begin
 		when others => q <= h;
 	end case;
 end process;
-
-
 end architecture;
