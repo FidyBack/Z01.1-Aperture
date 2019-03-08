@@ -65,7 +65,6 @@ if __name__ == "__main__":
     print("Reporting test result to server")
     r.send()
     sys.exit(r.error)
-    print("===================================================")
-
+print("===================================================")
 
 

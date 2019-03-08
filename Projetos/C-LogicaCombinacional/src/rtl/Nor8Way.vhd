@@ -16,6 +16,7 @@ end entity;
 
 architecture arch of Nor8Way is
 begin
-
-
+	q <= NOT((a OR b) OR (c OR d) OR (e OR f) OR (g OR h));
 end architecture;
+
+

@@ -22,4 +22,8 @@ Mux4Way.vhd
 Mux16.vhd
 Mux4Way16.vhd
 Mux8Way.vhd
+<<<<<<< HEAD
 #Mux8Way16.vhd
+=======
+#Mux8Way16.vhd
+>>>>>>> 6d2fb8c8b92e1a72f32b9f09c24100ca85627c7d

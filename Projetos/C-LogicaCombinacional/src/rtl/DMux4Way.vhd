@@ -14,6 +14,7 @@ end entity;
 architecture rtl of DMux4Way is
 begin
 
+<<<<<<< HEAD
 process(a,q0,q1,q2,q3,sel)
 begin
 
@@ -26,5 +27,7 @@ begin
 	
 
 end process;
+=======
+>>>>>>> 6d2fb8c8b92e1a72f32b9f09c24100ca85627c7d
 end architecture;
 
