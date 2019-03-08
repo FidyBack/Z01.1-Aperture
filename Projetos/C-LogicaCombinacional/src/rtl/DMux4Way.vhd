@@ -13,18 +13,9 @@ end entity;
 
 architecture rtl of DMux4Way is
 begin
-
-process(a,q0,q1,q2,q3,sel)
-begin
-
-	case sel is
-		when "00" => q0 <= a;
-		when "01" => q1 <= a;
-		when "10" => q2 <= a;
-		when others => q3 <= a;
-	end case;
-	
-
-end process;
+	q0 <= a when (sel = "00") else '0';
+	q1 <= a when (sel = "01") else '0';
+	q2 <= a when (sel = "10") else '0';
+	q3 <= a when (sel = "11") else '0';
 end architecture;
 
