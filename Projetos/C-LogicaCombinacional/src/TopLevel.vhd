@@ -24,7 +24,6 @@ entity TopLevel is
 		SW      : in  std_logic_vector(9 downto 0);
 		HEX0    : out std_logic_vector(6 downto 0); -- 7seg0
 		HEX1    : out std_logic_vector(6 downto 0); -- 7seg1
-<<<<<<< HEAD
 		HEX2    : out std_logic_vector(6 downto 0); -- 7seg2
 		HEX3    : out std_logic_vector(6 downto 0); -- 7seg3
 		HEX4    : out std_logic_vector(6 downto 0); -- 7seg4
@@ -119,11 +118,6 @@ entity TopLevel is
 
 -- This line demonstrates the signed case
 
-=======
-		HEX2    : out std_logic_vector(6 downto 0) -- 7seg2
-	);
-	
->>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 end entity;
 
 ----------------------------
