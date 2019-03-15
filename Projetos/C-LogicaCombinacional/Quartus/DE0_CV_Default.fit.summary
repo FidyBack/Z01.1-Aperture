@@ -1,13 +1,33 @@
+<<<<<<< HEAD
 Fitter Status : Successful - Thu Mar  7 19:18:23 2019
+=======
+<<<<<<< HEAD
+Fitter Status : Successful - Fri Mar  8 20:04:35 2019
+=======
+Fitter Status : Successful - Fri Mar  8 17:43:19 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : DE0_CV_Default
 Top-level Entity Name : TopLevel
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
+<<<<<<< HEAD
 Logic utilization (in ALMs) : 1 / 18,480 ( < 1 % )
 Total registers : 0
 Total pins : 62 / 224 ( 28 % )
+=======
+<<<<<<< HEAD
+Logic utilization (in ALMs) : 3,304 / 18,480 ( 18 % )
+Total registers : 0
+Total pins : 52 / 224 ( 23 % )
+=======
+Logic utilization (in ALMs) : 9 / 18,480 ( < 1 % )
+Total registers : 0
+Total pins : 31 / 224 ( 14 % )
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

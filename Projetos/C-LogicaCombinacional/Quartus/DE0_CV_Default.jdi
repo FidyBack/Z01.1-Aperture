@@ -1,6 +1,10 @@
 <sld_project_info>
   <project>
+<<<<<<< HEAD
     <hash md5_digest_80b="eb93b9e66ad552813e67"/>
+=======
+    <hash md5_digest_80b="4cd544591bb6eae32515"/>
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
   </project>
   <file_info>
     <file device="5CEBA4F23C7" path="DE0_CV_Default.sof" usercode="0xFFFFFFFF"/>
