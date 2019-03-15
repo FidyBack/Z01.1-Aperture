@@ -15,11 +15,10 @@ entity HalfAdder is
 end entity;
 
 architecture rtl of HalfAdder is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
 
 begin
-  -- Implementação vem aqui!
+
+soma <= (not(a) and b) or (a and not(b));
+vaium <= a and b;
 
 end architecture;
