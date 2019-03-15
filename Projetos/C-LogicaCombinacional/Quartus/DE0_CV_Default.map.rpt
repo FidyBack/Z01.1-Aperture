@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_CV_Default
-Thu Mar  7 19:36:50 2019
+Fri Mar  8 10:24:21 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Mar  7 19:36:50 2019           ;
+; Analysis & Synthesis Status ; Failed - Fri Mar  8 10:24:21 2019           ;
 ; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name               ; DE0_CV_Default                              ;
 ; Top-level Entity Name       ; TopLevel                                    ;
@@ -143,13 +143,11 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Mar  7 19:36:32 2019
+    Info: Processing started: Fri Mar  8 10:24:02 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20029): Only one processor detected - disabling parallel compilation
-Error (10500): VHDL syntax error at TopLevel.vhd(47) near text "when";  expecting "end", or "(", or an identifier ("when" is a reserved keyword), or a concurrent statement File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 47
-Error (10500): VHDL syntax error at TopLevel.vhd(47) near text "=";  expecting "(", or "'", or "." File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 47
-Error (10500): VHDL syntax error at TopLevel.vhd(55) near text "else";  expecting "end", or "(", or an identifier ("else" is a reserved keyword), or a concurrent statement File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 55
+Error (10500): VHDL syntax error at TopLevel.vhd(29) near text ")";  expecting an identifier, or "constant", or "file", or "signal", or "variable" File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 29
 Info (12021): Found 0 design units, including 0 entities, in source file /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/TopLevel.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
     Info (12022): Found design unit 1: Or16-arch File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 11
@@ -198,9 +196,9 @@ Warning (12019): Can't analyze file -- file ../src/rtl/BarrelShifter8.vhd is mis
 Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
     Info (12022): Found design unit 1: And16-arch File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 11
     Info (12023): Found entity 1: And16 File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 3 warnings
-    Error: Peak virtual memory: 1005 megabytes
-    Error: Processing ended: Thu Mar  7 19:36:51 2019
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 3 warnings
+    Error: Peak virtual memory: 1008 megabytes
+    Error: Processing ended: Fri Mar  8 10:24:21 2019
     Error: Elapsed time: 00:00:19
     Error: Total CPU time (on all processors): 00:00:15
 
