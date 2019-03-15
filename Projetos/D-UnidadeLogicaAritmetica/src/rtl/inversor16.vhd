@@ -16,8 +16,8 @@ end entity;
 architecture rtl of inversor16 is
 
 begin
- y <= 
- not(a) when (z = '1') else
- a;
+	y <= 
+	not(a) when (z = '1') else
+	a;
 
 end architecture;
