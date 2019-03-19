@@ -17,8 +17,7 @@ end entity;
 architecture rtl of HalfAdder is
 
 begin
-
-soma <= (not(a) and b) or (a and not(b));
-vaium <= a and b;
+	soma <= (not(a) and b) or (not(b) and a);
+	vaium <= a and b;
 
 end architecture;
