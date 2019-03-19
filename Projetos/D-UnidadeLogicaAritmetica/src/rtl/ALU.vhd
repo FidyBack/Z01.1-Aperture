@@ -96,6 +96,6 @@ architecture  rtl OF alu is
    SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
 
 begin
-  -- Implementação vem aqui!
+
 
 end architecture;
