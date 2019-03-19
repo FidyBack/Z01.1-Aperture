@@ -1,85 +1,74 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+----------------------------
+-- Bibliotecas ieee       --
+----------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-entity ALU is
-	port (
-			x,y:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
-			zx:    in STD_LOGIC;                     -- zera a entrada x
-			nx:    in STD_LOGIC;                     -- inverte a entrada x
-			zy:    in STD_LOGIC;                     -- zera a entrada y
-			ny:    in STD_LOGIC;                     -- inverte a entrada y
-			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
-			no:    in STD_LOGIC;                     -- inverte o valor da saída
-			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
-			ng:    out STD_LOGIC;                    -- setado se saída é negativa
-			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
+----------------------------
+-- Entrada e saidas do bloco
+----------------------------
+entity TopLevel is
+	port(
+		SW      : in  std_logic_vector(9 downto 0);
+		LEDR    : out std_logic_vector(9 downto 0)
 	);
 end entity;
 
-architecture  rtl OF alu is
-	signal outzx : std_logic_vector(15 downto 0);
-	signal outzy : std_logic_vector(15 downto 0);
-	
-	component zerador16 IS
-		port(z   : in STD_LOGIC;
-			 a   : in STD_LOGIC_VECTOR(15 downto 0);
-			 y   : out STD_LOGIC_VECTOR(15 downto 0)
-			);
-	end component;
+----------------------------
+-- Implementacao do bloco -- 
+----------------------------
+architecture rtl of TopLevel is
 
-	component inversor16 is
-		port(z   : in STD_LOGIC;
-			 a   : in STD_LOGIC_VECTOR(15 downto 0);
-			 y   : out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
+--------------
+-- signals
+--------------
 
-	component Add16 is
-		port(
-			a   :  in STD_LOGIC_VECTOR(15 downto 0);
-			b   :  in STD_LOGIC_VECTOR(15 downto 0);
-			q   : out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
+  signal x : std_logic_vector(15 downto 0) := x"0001"; -- 1
+  signal y : std_logic_vector(15 downto 0) := x"0002"; -- 2
 
-	component And16 is
-		port (
-			a:   in  STD_LOGIC_VECTOR(15 downto 0);
-			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			q:   out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
+--------------=
+-- component
+--------------
 
-	component comparador16 is
-		port(
-			a   : in STD_LOGIC_VECTOR(15 downto 0);
-			zr   : out STD_LOGIC;
-			ng   : out STD_LOGIC
-	);
-	end component;
+  COMPONENT ALU
+    PORT
+      (
+        x		:	 IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        y		:	 IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        zx	    :	 IN STD_LOGIC;
+        nx	    :	 IN STD_LOGIC;
+        zy	    :	 IN STD_LOGIC;
+        ny	    :	 IN STD_LOGIC;
+        f		:	 IN STD_LOGIC;
+        no	    :	 IN STD_LOGIC;
+        zr	    :	 OUT STD_LOGIC;
+        ng	    :	 OUT STD_LOGIC;
+		  sl      : IN STD_LOGIC;
+        saida	:	 OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+        );
+  END COMPONENT;
 
-	component Mux16 is
-		port (
-			a:   in  STD_LOGIC_VECTOR(15 downto 0);
-			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			sel: in  STD_LOGIC;
-			q:   out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
-
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
-
+---------------
+-- implementacao
+---------------
 begin
-zerax: zerador16 port map (z=> zx, a=>x, y=>zxout);
-zeray: zerador16 port map (z=> zy, a=>y, y=>zyout);
-invex: inversor16 port map (z=> nx, a=>zxout, y=>nxout);
-invey: inversor16 port map (z=> ny, a=>zyout, y=>nyout);
-add: Add16 port map (a=>nxout, b=>nyout, q=>adderout);
-Aand: and16 port map (a=>nxout, b=>nyout, q=>andout);
-mux: mux16 port map (sel=>f, a=>andout, b=>adderout, q=>muxout);
-inver: inversor16 port map (z=> no, a=>muxout, y=>precomp);
 
-comparator: comparador16 port map(a=>precomp,zr=>Zr,ng=>Ng);
+  ula0: ALU port map (
+    x                  => x,
+    Y                  => y,
+    Zx                 => SW(0),
+    Nx                 => SW(1),
+    Zy                 => SW(2),
+    Ny                 => SW(3),
+    F                  => SW(4),
+    No                 => SW(5),
+	 Sl                 => SW(6),
+    Zr                 => LEDR(8),
+    Ng                 => LEDR(9),
+    Saida(7 downto 0)  => LEDR(7 downto 0),
+    Saida(15 downto 8) => Open
+   );
 
-saida <= precomp;
-end architecture;
+
+end rtl;

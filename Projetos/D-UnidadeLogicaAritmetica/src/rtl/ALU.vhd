@@ -10,6 +10,7 @@ entity ALU is
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
 			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
+			sl:    in STD_LOGIC;                     -- coisa nova e divertida (shift left)
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
 			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
@@ -67,9 +68,18 @@ architecture  rtl OF alu is
 		);
 	end component;
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+	component shiftLeft16 is
+		port(
+			z   : in STD_LOGIC;
+			a   : in STD_LOGIC_VECTOR(15 downto 0);
+			y   : out STD_LOGIC_VECTOR(15 downto 0)
+			);
+	end component;
+
+   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,invout,precomp: std_logic_vector(15 downto 0);
 
 begin
+
 zerax: zerador16 port map (z=> zx, a=>x, y=>zxout);
 zeray: zerador16 port map (z=> zy, a=>y, y=>zyout);
 invex: inversor16 port map (z=> nx, a=>zxout, y=>nxout);
@@ -77,7 +87,8 @@ invey: inversor16 port map (z=> ny, a=>zyout, y=>nyout);
 add: Add16 port map (a=>nxout, b=>nyout, q=>adderout);
 Aand: and16 port map (a=>nxout, b=>nyout, q=>andout);
 mux: mux16 port map (sel=>f, a=>andout, b=>adderout, q=>muxout);
-inver: inversor16 port map (z=> no, a=>muxout, y=>precomp);
+inver: inversor16 port map (z=> no, a=>muxout, y=>invout);
+shift: shiftLeft16 port map (z=> sl, a=>invout, y=>precomp);
 
 comparator: comparador16 port map(a=>precomp,zr=>Zr,ng=>Ng);
 
