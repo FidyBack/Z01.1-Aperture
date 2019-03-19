@@ -1,9 +1,3 @@
--- Elementos de Sistemas
--- by Luciano Soares
--- HalfAdder.vhd
-
--- Implementa Half Adder
-
 Library ieee;
 use ieee.std_logic_1164.all;
 
@@ -16,8 +10,8 @@ end entity;
 
 architecture rtl of HalfAdder is
 
-
 begin
+
 	soma <= (not(a) and b) or (not(b) and a);
 	vaium <= a and b;
 
