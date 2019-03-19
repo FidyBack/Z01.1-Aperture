@@ -19,6 +19,7 @@ architecture rtl of zerador16 is
   -- utilizados nesse modulo.
 
 begin
-  -- Implementação vem aqui!
+  y <= (others => '0') when z = '1' else
+       a when z = '0';
 
 end architecture;
