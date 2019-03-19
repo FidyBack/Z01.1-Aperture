@@ -27,11 +27,8 @@ entity TopLevel is
 		HEX2    : out std_logic_vector(6 downto 0); -- 7seg2
 		HEX3    : out std_logic_vector(6 downto 0); -- 7seg3
 		HEX4    : out std_logic_vector(6 downto 0); -- 7seg4
-<<<<<<< HEAD
 		HEX5    : out std_logic_vector(6 downto 0); -- 7seg5
-=======
-		HEX5    : out std_logic_vector(6 downto 0) -- 7seg5
->>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
+
 	);
 	constant none : std_logic_vector(6 downto 0) := ('1','1','1','1','1','1','1');
 	constant n0 : std_logic_vector(6 downto 0) := ('1','0','0','0','0','0','0');
@@ -142,9 +139,6 @@ begin
 	with SW(0) select
 		HEX0 <= "0000001" when '0',
 			"1001111" when others;
-=======
-  
-begin
 
 s0<=Inte(SW(0));
 s1<=Inte(SW(1));
