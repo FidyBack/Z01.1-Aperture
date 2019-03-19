@@ -14,11 +14,10 @@ entity inversor16 is
 end entity;
 
 architecture rtl of inversor16 is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
 
 begin
-  -- Implementação vem aqui!
+	y <= 
+	not(a) when (z = '1') else
+	a;
 
 end architecture;
