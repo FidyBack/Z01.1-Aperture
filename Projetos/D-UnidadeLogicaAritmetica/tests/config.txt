@@ -4,8 +4,13 @@
 FullAdder.vhd
 HalfAdder.vhd
 Add16.vhd
+<<<<<<< HEAD
+#Inc16.vhd
+#comparador16.vhd
+=======
 Inc16.vhd
 comparador16.vhd
+>>>>>>> f2a7338c07a3f29791a30a10f4b063eff54f0914
 inversor16.vhd
 zerador16.vhd
 ALU.vhd
