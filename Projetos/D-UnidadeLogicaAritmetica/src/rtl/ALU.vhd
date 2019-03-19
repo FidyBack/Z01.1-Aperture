@@ -79,10 +79,6 @@ architecture  rtl OF alu is
    SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,invout,precomp: std_logic_vector(15 downto 0);
 
 begin
-<<<<<<< HEAD
-
-=======
->>>>>>> d59a1bdd78f6ed4dc12e64403298a8188a602b1a
 
 zerax: zerador16 port map (z=> zx, a=>x, y=>zxout);
 zeray: zerador16 port map (z=> zy, a=>y, y=>zyout);
