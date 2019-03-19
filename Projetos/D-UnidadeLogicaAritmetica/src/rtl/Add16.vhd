@@ -1,9 +1,4 @@
--- Elementos de Sistemas
--- by Luciano Soares
--- Add16.vhd
 
--- Soma dois valores de 16 bits
--- ignorando o carry mais significativo
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
@@ -17,9 +12,6 @@ entity Add16 is
 end entity;
 
 architecture rtl of Add16 is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
 
   signal w: STD_LOGIC_VECTOR(15 downto 0);
 
