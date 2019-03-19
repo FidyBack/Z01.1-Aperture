@@ -26,6 +26,5 @@ architecture rtl of Inc16 is
 
 begin
   -- Implementação vem aqui!
-		
 
 end architecture;
