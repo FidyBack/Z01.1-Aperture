@@ -1,9 +1,13 @@
 Flow report for DE0_CV_Default
 <<<<<<< HEAD
+Fri Mar  8 10:24:21 2019
+=======
+<<<<<<< HEAD
 Fri Mar  8 20:04:56 2019
 =======
 Fri Mar  8 17:43:30 2019
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -41,6 +45,26 @@ refer to the applicable agreement for further details.
 
 
 
+<<<<<<< HEAD
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Flow Failed - Fri Mar  8 10:24:21 2019      ;
+; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name               ; DE0_CV_Default                              ;
+; Top-level Entity Name       ; TopLevel                                    ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CEBA4F23C7                                 ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+=======
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
@@ -74,6 +98,7 @@ refer to the applicable agreement for further details.
 ; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
 ; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 +-----------------------------------------+
@@ -82,10 +107,14 @@ refer to the applicable agreement for further details.
 ; Option            ; Setting             ;
 +-------------------+---------------------+
 <<<<<<< HEAD
+; Start date & time ; 03/08/2019 10:24:03 ;
+=======
+<<<<<<< HEAD
 ; Start date & time ; 03/08/2019 20:03:09 ;
 =======
 ; Start date & time ; 03/08/2019 17:42:45 ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE0_CV_Default      ;
 +-------------------+---------------------+
@@ -97,10 +126,14 @@ refer to the applicable agreement for further details.
 ; Assignment Name                     ; Value                                  ; Default Value                        ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
 <<<<<<< HEAD
+; COMPILER_SIGNATURE_ID               ; 8796760566721.155205144303328          ; --                                   ; --          ; --         ;
+=======
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 102021908929880.155208618911750        ; --                                   ; --          ; --         ;
 =======
 ; COMPILER_SIGNATURE_ID               ; 110073159329384.155207776510879        ; --                                   ; --          ; --         ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit                             ; --          ; --         ;
 ; FLOW_ENABLE_RTL_VIEWER              ; On                                     ; Off                                  ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                                   ; --          ; --         ;
@@ -121,6 +154,25 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
 
 
+<<<<<<< HEAD
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 1008 MB             ; 00:00:15                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:15                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++----------------------+------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++----------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; borg-borg        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
++----------------------+------------------+----------------+------------+----------------+
+=======
 +-------------------------------------------------------------------------------------------------------------------------------+
 ; Flow Elapsed Time                                                                                                             ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
@@ -152,15 +204,19 @@ refer to the applicable agreement for further details.
 ; Assembler                 ; borg-borg        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
 ; TimeQuest Timing Analyzer ; borg-borg        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
+<<<<<<< HEAD
+=======
 quartus_fit --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 quartus_asm --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 quartus_sta DE0_CV_Default -c DE0_CV_Default
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 

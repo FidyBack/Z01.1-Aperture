@@ -1,9 +1,13 @@
 Fitter report for DE0_CV_Default
 <<<<<<< HEAD
+Thu Mar  7 19:18:23 2019
+=======
+<<<<<<< HEAD
 Fri Mar  8 20:04:35 2019
 =======
 Fri Mar  8 17:43:19 2019
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,6 +17,31 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   1. Legal Notice
   2. Fitter Summary
   3. Fitter Settings
+<<<<<<< HEAD
+  4. Ignored Assignments
+  5. Incremental Compilation Preservation Summary
+  6. Incremental Compilation Partition Settings
+  7. Incremental Compilation Placement Preservation
+  8. Pin-Out File
+  9. Fitter Resource Usage Summary
+ 10. Fitter Partition Statistics
+ 11. Input Pins
+ 12. Output Pins
+ 13. I/O Bank Usage
+ 14. All Package Pins
+ 15. I/O Assignment Warnings
+ 16. Fitter Resource Utilization by Entity
+ 17. Delay Chain Summary
+ 18. Pad To Core Delay Chain Fanout
+ 19. Routing Usage Summary
+ 20. I/O Rules Summary
+ 21. I/O Rules Details
+ 22. I/O Rules Matrix
+ 23. Fitter Device Options
+ 24. Operating Settings and Conditions
+ 25. Fitter Messages
+ 26. Fitter Suppressed Messages
+=======
   4. Parallel Compilation
   5. Ignored Assignments
   6. Incremental Compilation Preservation Summary
@@ -37,6 +66,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  25. Operating Settings and Conditions
  26. Fitter Messages
  27. Fitter Suppressed Messages
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 
@@ -63,16 +93,25 @@ refer to the applicable agreement for further details.
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
 <<<<<<< HEAD
+; Fitter Status                   ; Successful - Thu Mar  7 19:18:23 2019       ;
+=======
+<<<<<<< HEAD
 ; Fitter Status                   ; Successful - Fri Mar  8 20:04:35 2019       ;
 =======
 ; Fitter Status                   ; Successful - Fri Mar  8 17:43:19 2019       ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
+<<<<<<< HEAD
+; Logic utilization (in ALMs)     ; 1 / 18,480 ( < 1 % )                        ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 62 / 224 ( 28 % )                           ;
+=======
 <<<<<<< HEAD
 ; Logic utilization (in ALMs)     ; 3,304 / 18,480 ( 18 % )                     ;
 ; Total registers                 ; 0                                           ;
@@ -82,6 +121,7 @@ refer to the applicable agreement for further details.
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 31 / 224 ( 14 % )                           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total RAM Blocks                ; 0 / 308 ( 0 % )                             ;
@@ -155,6 +195,8 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 
 
+<<<<<<< HEAD
+=======
 +------------------------------------------+
 ; Parallel Compilation                     ;
 +----------------------------+-------------+
@@ -180,6 +222,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 +-----------------------------------------------------------------------------------------------+
 ; Ignored Assignments                                                                           ;
 +--------------+----------------+--------------+---------------+---------------+----------------+
@@ -302,6 +345,8 @@ refer to the applicable agreement for further details.
 ; Location     ;                ;              ; GPIO_1[9]     ; PIN_G17       ; QSF Assignment ;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 ; Location     ;                ;              ; HEX3[0]       ; PIN_Y16       ; QSF Assignment ;
 ; Location     ;                ;              ; HEX3[1]       ; PIN_W16       ; QSF Assignment ;
 ; Location     ;                ;              ; HEX3[2]       ; PIN_Y17       ; QSF Assignment ;
@@ -324,10 +369,13 @@ refer to the applicable agreement for further details.
 ; Location     ;                ;              ; HEX5[5]       ; PIN_C2        ; QSF Assignment ;
 ; Location     ;                ;              ; HEX5[6]       ; PIN_W19       ; QSF Assignment ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Location     ;                ;              ; KEY[0]        ; PIN_U7        ; QSF Assignment ;
 ; Location     ;                ;              ; KEY[1]        ; PIN_W9        ; QSF Assignment ;
 ; Location     ;                ;              ; KEY[2]        ; PIN_M7        ; QSF Assignment ;
 ; Location     ;                ;              ; KEY[3]        ; PIN_M6        ; QSF Assignment ;
+<<<<<<< HEAD
+=======
 ; Location     ;                ;              ; LEDR[0]       ; PIN_AA2       ; QSF Assignment ;
 ; Location     ;                ;              ; LEDR[1]       ; PIN_AA1       ; QSF Assignment ;
 ; Location     ;                ;              ; LEDR[2]       ; PIN_W2        ; QSF Assignment ;
@@ -338,6 +386,7 @@ refer to the applicable agreement for further details.
 ; Location     ;                ;              ; LEDR[7]       ; PIN_U1        ; QSF Assignment ;
 ; Location     ;                ;              ; LEDR[8]       ; PIN_L2        ; QSF Assignment ;
 ; Location     ;                ;              ; LEDR[9]       ; PIN_L1        ; QSF Assignment ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Location     ;                ;              ; PS2_CLK       ; PIN_D3        ; QSF Assignment ;
 ; Location     ;                ;              ; PS2_CLK2      ; PIN_E2        ; QSF Assignment ;
 ; Location     ;                ;              ; PS2_DAT       ; PIN_G2        ; QSF Assignment ;
@@ -480,6 +529,8 @@ refer to the applicable agreement for further details.
 ; I/O Standard ; TopLevel       ;              ; GPIO_1[9]     ; 3.3-V LVTTL   ; QSF Assignment ;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 ; I/O Standard ; TopLevel       ;              ; HEX3[0]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; HEX3[1]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; HEX3[2]       ; 3.3-V LVTTL   ; QSF Assignment ;
@@ -502,10 +553,13 @@ refer to the applicable agreement for further details.
 ; I/O Standard ; TopLevel       ;              ; HEX5[5]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; HEX5[6]       ; 3.3-V LVTTL   ; QSF Assignment ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; I/O Standard ; TopLevel       ;              ; KEY[0]        ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; KEY[1]        ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; KEY[2]        ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; KEY[3]        ; 3.3-V LVTTL   ; QSF Assignment ;
+<<<<<<< HEAD
+=======
 ; I/O Standard ; TopLevel       ;              ; LEDR[0]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; LEDR[1]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; LEDR[2]       ; 3.3-V LVTTL   ; QSF Assignment ;
@@ -516,6 +570,7 @@ refer to the applicable agreement for further details.
 ; I/O Standard ; TopLevel       ;              ; LEDR[7]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; LEDR[8]       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; LEDR[9]       ; 3.3-V LVTTL   ; QSF Assignment ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; I/O Standard ; TopLevel       ;              ; PS2_CLK       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; PS2_CLK2      ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; TopLevel       ;              ; PS2_DAT       ; 3.3-V LVTTL   ; QSF Assignment ;
@@ -545,6 +600,21 @@ refer to the applicable agreement for further details.
 
 
 <<<<<<< HEAD
++--------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                     ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Placement (by node) ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 125 ) ; 0.00 % ( 0 / 125 )         ; 0.00 % ( 0 / 125 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 125 ) ; 0.00 % ( 0 / 125 )         ; 0.00 % ( 0 / 125 )       ;
+;                     ;                    ;                            ;                          ;
+; Routing (by net)    ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+--------------------+----------------------------+--------------------------+
+=======
+<<<<<<< HEAD
 +---------------------------------------------------------------------------------------------------+
 ; Incremental Compilation Preservation Summary                                                      ;
 +---------------------+---------------------+----------------------------+--------------------------+
@@ -573,6 +643,7 @@ refer to the applicable agreement for further details.
 ;     -- Achieved     ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
 +---------------------+-------------------+----------------------------+--------------------------+
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -591,10 +662,14 @@ refer to the applicable agreement for further details.
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 <<<<<<< HEAD
+; Top                            ; 0.00 % ( 0 / 125 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+=======
+<<<<<<< HEAD
 ; Top                            ; 0.00 % ( 0 / 6606 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 =======
 ; Top                            ; 0.00 % ( 0 / 80 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -602,6 +677,11 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
+<<<<<<< HEAD
+The pin-out file can be found in /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pin.
+
+
+=======
 The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pin.
 
 
@@ -765,16 +845,25 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;     -- Output Ports with no Fanout                          ; 0                     ; 0                              ;
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 =======
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 +------------------------------------------------------------------------------------------+
 ; Fitter Resource Usage Summary                                                            ;
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
+<<<<<<< HEAD
+; Logic utilization (ALMs needed / total ALMs on device)      ; 1 / 18,480         ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 1                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 1 / 18,480         ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 0                  ;       ;
+;         [b] ALMs used for LUT logic                         ; 1                  ;       ;
+=======
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 9 / 18,480         ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 9                  ;       ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 9 / 18,480         ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                  ;       ;
 ;         [b] ALMs used for LUT logic                         ; 9                  ;       ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18,480         ; 0 %   ;
@@ -786,6 +875,18 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
+<<<<<<< HEAD
+; Total LABs:  partially or completely used                   ; 1 / 1,848          ; < 1 % ;
+;     -- Logic LABs                                           ; 1                  ;       ;
+;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
+;                                                             ;                    ;       ;
+; Combinational ALUT usage for logic                          ; 1                  ;       ;
+;     -- 7 input functions                                    ; 0                  ;       ;
+;     -- 6 input functions                                    ; 0                  ;       ;
+;     -- 5 input functions                                    ; 0                  ;       ;
+;     -- 4 input functions                                    ; 0                  ;       ;
+;     -- <=3 input functions                                  ; 1                  ;       ;
+=======
 ; Total LABs:  partially or completely used                   ; 2 / 1,848          ; < 1 % ;
 ;     -- Logic LABs                                           ; 2                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
@@ -796,6 +897,7 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;     -- 5 input functions                                    ; 0                  ;       ;
 ;     -- 4 input functions                                    ; 14                 ;       ;
 ;     -- <=3 input functions                                  ; 4                  ;       ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 0                  ;       ;
@@ -807,8 +909,13 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
+<<<<<<< HEAD
+; I/O pins                                                    ; 62 / 224           ; 28 %  ;
+;     -- Clock pins                                           ; 4 / 9              ; 44 %  ;
+=======
 ; I/O pins                                                    ; 31 / 224           ; 14 %  ;
 ;     -- Clock pins                                           ; 1 / 9              ; 11 %  ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; M10K blocks                                                 ; 0 / 308            ; 0 %   ;
@@ -831,11 +938,19 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
+<<<<<<< HEAD
+; Peak interconnect usage (total/H/V)                         ; 0.0% / 0.0% / 0.0% ;       ;
+; Maximum fan-out                                             ; 1                  ;       ;
+; Highest non-global fan-out                                  ; 1                  ;       ;
+; Total fan-out                                               ; 62                 ;       ;
+; Average fan-out                                             ; 0.50               ;       ;
+=======
 ; Peak interconnect usage (total/H/V)                         ; 0.4% / 0.4% / 0.2% ;       ;
 ; Maximum fan-out                                             ; 7                  ;       ;
 ; Highest non-global fan-out                                  ; 7                  ;       ;
 ; Total fan-out                                               ; 113                ;       ;
 ; Average fan-out                                             ; 1.41               ;       ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -844,11 +959,19 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 +-------------------------------------------------------------+---------------------+--------------------------------+
 ; Statistic                                                   ; Top                 ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+---------------------+--------------------------------+
+<<<<<<< HEAD
+; Logic utilization (ALMs needed / total ALMs on device)      ; 1 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 1                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 1 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 0                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 1                   ; 0                              ;
+=======
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 9 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 9                   ; 0                              ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 9 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                   ; 0                              ;
 ;         [b] ALMs used for LUT logic                         ; 9                   ; 0                              ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ;         [c] ALMs used for registers                         ; 0                   ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                   ; 0                              ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18480 ( 0 % )   ; 0 / 18480 ( 0 % )              ;
@@ -860,6 +983,18 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;                                                             ;                     ;                                ;
 ; Difficulty packing design                                   ; Low                 ; Low                            ;
 ;                                                             ;                     ;                                ;
+<<<<<<< HEAD
+; Total LABs:  partially or completely used                   ; 1 / 1848 ( < 1 % )  ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 1                   ; 0                              ;
+;     -- Memory LABs (up to half of total LABs)               ; 0                   ; 0                              ;
+;                                                             ;                     ;                                ;
+; Combinational ALUT usage for logic                          ; 1                   ; 0                              ;
+;     -- 7 input functions                                    ; 0                   ; 0                              ;
+;     -- 6 input functions                                    ; 0                   ; 0                              ;
+;     -- 5 input functions                                    ; 0                   ; 0                              ;
+;     -- 4 input functions                                    ; 0                   ; 0                              ;
+;     -- <=3 input functions                                  ; 1                   ; 0                              ;
+=======
 ; Total LABs:  partially or completely used                   ; 2 / 1848 ( < 1 % )  ; 0 / 1848 ( 0 % )               ;
 ;     -- Logic LABs                                           ; 2                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                   ; 0                              ;
@@ -870,6 +1005,7 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;     -- 5 input functions                                    ; 0                   ; 0                              ;
 ;     -- 4 input functions                                    ; 14                  ; 0                              ;
 ;     -- <=3 input functions                                  ; 4                   ; 0                              ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Combinational ALUT usage for route-throughs                 ; 0                   ; 0                              ;
 ; Memory ALUT usage                                           ; 0                   ; 0                              ;
 ;     -- 64-address deep                                      ; 0                   ; 0                              ;
@@ -885,7 +1021,11 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;                                                             ;                     ;                                ;
 ;                                                             ;                     ;                                ;
 ; Virtual pins                                                ; 0                   ; 0                              ;
+<<<<<<< HEAD
+; I/O pins                                                    ; 62                  ; 0                              ;
+=======
 ; I/O pins                                                    ; 31                  ; 0                              ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; I/O registers                                               ; 0                   ; 0                              ;
 ; Total block memory bits                                     ; 0                   ; 0                              ;
 ; Total block memory implementation bits                      ; 0                   ; 0                              ;
@@ -897,7 +1037,11 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;     -- Registered Output Connections                        ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Internal Connections                                        ;                     ;                                ;
+<<<<<<< HEAD
+;     -- Total Connections                                    ; 62                  ; 0                              ;
+=======
 ;     -- Total Connections                                    ; 113                 ; 0                              ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ;     -- Registered Connections                               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; External Connections                                        ;                     ;                                ;
@@ -906,7 +1050,11 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;                                                             ;                     ;                                ;
 ; Partition Interface                                         ;                     ;                                ;
 ;     -- Input Ports                                          ; 10                  ; 0                              ;
+<<<<<<< HEAD
+;     -- Output Ports                                         ; 52                  ; 0                              ;
+=======
 ;     -- Output Ports                                         ; 21                  ; 0                              ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ;     -- Bidir Ports                                          ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Registered Ports                                            ;                     ;                                ;
@@ -923,7 +1071,10 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ;     -- Input Ports with no Fanout                           ; 0                   ; 0                              ;
 ;     -- Output Ports with no Fanout                          ; 0                   ; 0                              ;
 +-------------------------------------------------------------+---------------------+--------------------------------+
+<<<<<<< HEAD
+=======
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -931,6 +1082,18 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
+<<<<<<< HEAD
+; SW[0] ; U13   ; 4A       ; 33           ; 0            ; 40           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[1] ; V13   ; 4A       ; 33           ; 0            ; 57           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[2] ; T13   ; 4A       ; 34           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[3] ; T12   ; 4A       ; 34           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[4] ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[5] ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[6] ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[7] ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[8] ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[9] ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+=======
 <<<<<<< HEAD
 ; SW[0] ; U13   ; 4A       ; 33           ; 0            ; 40           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[1] ; V13   ; 4A       ; 33           ; 0            ; 57           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
@@ -954,6 +1117,7 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; SW[8] ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[9] ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -984,6 +1148,9 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; HEX2[5] ; AB22  ; 4A       ; 46           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; HEX2[6] ; AB21  ; 4A       ; 40           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; HEX3[0] ; Y16   ; 4A       ; 40           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; HEX3[1] ; W16   ; 4A       ; 46           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; HEX3[2] ; Y17   ; 4A       ; 40           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
@@ -1005,8 +1172,21 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; HEX5[4] ; C1    ; 2A       ; 0            ; 21           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; HEX5[5] ; C2    ; 2A       ; 0            ; 21           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; HEX5[6] ; W19   ; 4A       ; 44           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+<<<<<<< HEAD
+; LEDR[0] ; AA2   ; 2A       ; 0            ; 18           ; 77           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[1] ; AA1   ; 2A       ; 0            ; 18           ; 94           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[2] ; W2    ; 2A       ; 0            ; 18           ; 60           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[3] ; Y3    ; 2A       ; 0            ; 18           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[4] ; N2    ; 2A       ; 0            ; 19           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[5] ; N1    ; 2A       ; 0            ; 19           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[6] ; U2    ; 2A       ; 0            ; 19           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[7] ; U1    ; 2A       ; 0            ; 19           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[8] ; L2    ; 2A       ; 0            ; 20           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; LEDR[9] ; L1    ; 2A       ; 0            ; 20           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; Off         ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+=======
 =======
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 +---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -1015,6 +1195,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 +----------+------------------+---------------+--------------+---------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
 +----------+------------------+---------------+--------------+---------------+
+<<<<<<< HEAD
+; 2A       ; 12 / 16 ( 75 % ) ; 3.3V          ; --           ; 3.3V          ;
+; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 4 / 32 ( 13 % )  ; 3.3V          ; --           ; 3.3V          ;
+; 4A       ; 46 / 48 ( 96 % ) ; 3.3V          ; --           ; 3.3V          ;
+=======
 <<<<<<< HEAD
 ; 2A       ; 2 / 16 ( 13 % )  ; 3.3V          ; --           ; 3.3V          ;
 ; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -1026,6 +1212,7 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; 3B       ; 1 / 32 ( 3 % )   ; 3.3V          ; --           ; 3.3V          ;
 ; 4A       ; 30 / 48 ( 63 % ) ; 3.3V          ; --           ; 3.3V          ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 7A       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -1060,8 +1247,13 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; A20      ;            ;          ; NC                              ;        ;              ;           ; --           ;                 ; --       ; --           ;
 ; A21      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; A22      ;            ;          ; NC                              ;        ;              ;           ; --           ;                 ; --       ; --           ;
+<<<<<<< HEAD
+; AA1      ; 29         ; 2A       ; LEDR[1]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+; AA2      ; 31         ; 2A       ; LEDR[0]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+=======
 ; AA1      ; 29         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; AA2      ; 31         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; AA3      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; AA4      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; AA5      ; 53         ; 3A       ; ^AS_DATA2, DATA2                ;        ;              ;           ; Weak Pull Up ;                 ; --       ; On           ;
@@ -1130,9 +1322,14 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; C1       ; 16         ; 2A       ; HEX5[4]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
 ; C2       ; 18         ; 2A       ; HEX5[5]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
 =======
+<<<<<<< HEAD
+; C1       ; 16         ; 2A       ; HEX5[4]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+; C2       ; 18         ; 2A       ; HEX5[5]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+=======
 ; C1       ; 16         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; C2       ; 18         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; C3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; C4       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; C5       ; 292        ; 9A       ; ^GND                            ;        ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1159,8 +1356,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 <<<<<<< HEAD
 ; D4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 =======
+<<<<<<< HEAD
+; D4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
+=======
 ; D4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; D5       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; D6       ; 274        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; D7       ; 276        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -1182,8 +1383,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 <<<<<<< HEAD
 ; E1       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 =======
+<<<<<<< HEAD
+; E1       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
+=======
 ; E1       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; E2       ; 20         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; E3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; E4       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1275,9 +1480,14 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; J1       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; J2       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 =======
+<<<<<<< HEAD
+; J1       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
+; J2       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
+=======
 ; J1       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; J2       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; J3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; J4       ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
 ; J5       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1320,8 +1530,13 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; K20      ; 203        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; K21      ; 183        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; K22      ; 185        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+<<<<<<< HEAD
+; L1       ; 21         ; 2A       ; LEDR[9]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+; L2       ; 23         ; 2A       ; LEDR[8]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+=======
 ; L1       ; 21         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; L2       ; 23         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; L3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; L4       ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
 ; L5       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1352,8 +1567,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 <<<<<<< HEAD
 ; M8       ; 86         ; 3B       ; HEX5[1]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 =======
+<<<<<<< HEAD
+; M8       ; 86         ; 3B       ; HEX5[1]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+=======
 ; M8       ; 86         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; M9       ; 88         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; M10      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
@@ -1368,8 +1587,13 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; M20      ; 179        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; M21      ; 181        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; M22      ; 175        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+<<<<<<< HEAD
+; N1       ; 24         ; 2A       ; LEDR[5]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+; N2       ; 26         ; 2A       ; LEDR[4]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+=======
 ; N1       ; 24         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; N2       ; 26         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; N3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; N4       ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
 ; N5       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1379,8 +1603,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 <<<<<<< HEAD
 ; N9       ; 104        ; 3B       ; HEX5[0]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 =======
+<<<<<<< HEAD
+; N9       ; 104        ; 3B       ; HEX5[0]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+=======
 ; N9       ; 104        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; N10      ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; N12      ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
@@ -1405,8 +1633,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 <<<<<<< HEAD
 ; P9       ; 102        ; 3B       ; HEX4[6]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 =======
+<<<<<<< HEAD
+; P9       ; 102        ; 3B       ; HEX4[6]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+=======
 ; P9       ; 102        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; P10      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; P11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
 ; P12      ; 97         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -1414,8 +1646,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 <<<<<<< HEAD
 ; P14      ; 142        ; 4A       ; HEX5[3]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 =======
+<<<<<<< HEAD
+; P14      ; 142        ; 4A       ; HEX5[3]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+=======
 ; P14      ; 142        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; P15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V      ; --           ;                 ; --       ; --           ;
 ; P16      ; 167        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; P17      ; 169        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
@@ -1428,9 +1664,14 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; R1       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; R2       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 =======
+<<<<<<< HEAD
+; R1       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
+; R2       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
+=======
 ; R1       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; R2       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; R3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; R4       ; 49         ; 3A       ; ^nCSO, DATA4                    ;        ;              ;           ; Weak Pull Up ;                 ; --       ; On           ;
 ; R5       ; 60         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -1467,8 +1708,12 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 <<<<<<< HEAD
 ; T14      ; 126        ; 4A       ; HEX5[2]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 =======
+<<<<<<< HEAD
+; T14      ; 126        ; 4A       ; HEX5[2]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+=======
 ; T14      ; 126        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; T15      ; 159        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; T17      ; 157        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
@@ -1477,8 +1722,13 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; T20      ; 156        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; T21      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; T22      ; 158        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+<<<<<<< HEAD
+; U1       ; 25         ; 2A       ; LEDR[7]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+; U2       ; 27         ; 2A       ; LEDR[6]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+=======
 ; U1       ; 25         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; U2       ; 27         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; U3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; U4       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; U5       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1492,12 +1742,17 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; U13      ; 109        ; 4A       ; SW[0]                           ; input  ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; U14      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; U15      ; 128        ; 4A       ; HEX4[4]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; U16      ; 150        ; 4A       ; HEX4[3]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; U17      ; 152        ; 4A       ; HEX3[4]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; U18      ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; U19      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; U20      ; 153        ; 4A       ; HEX4[0]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+<<<<<<< HEAD
+=======
 =======
 ; U15      ; 128        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; U16      ; 150        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -1506,6 +1761,7 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; U19      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; U20      ; 153        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; U21      ; 151        ; 4A       ; HEX0[0]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; U22      ; 146        ; 4A       ; HEX1[6]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; V1       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1524,11 +1780,20 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; V14      ; 118        ; 4A       ; HEX2[4]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; V15      ; 120        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; V16      ; 134        ; 4A       ; HEX3[3]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; V18      ; 149        ; 4A       ; HEX3[5]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; V19      ; 147        ; 4A       ; HEX3[6]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; V20      ; 131        ; 4A       ; HEX4[2]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+<<<<<<< HEAD
+; V21      ; 148        ; 4A       ; HEX0[1]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+; V22      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
+; W1       ;            ; 2A       ; VREFB2AN0                       ; power  ;              ;           ; --           ;                 ; --       ; --           ;
+; W2       ; 28         ; 2A       ; LEDR[2]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+=======
 =======
 ; V16      ; 134        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1540,6 +1805,7 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; V22      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; W1       ;            ; 2A       ; VREFB2AN0                       ; power  ;              ;           ; --           ;                 ; --       ; --           ;
 ; W2       ; 28         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; W3       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; W4       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; W5       ; 54         ; 3A       ; #TDI                            ; input  ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1554,27 +1820,38 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; W14      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; W15      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; W16      ; 136        ; 4A       ; HEX3[1]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; W17      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; W18      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; W19      ; 133        ; 4A       ; HEX5[6]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+<<<<<<< HEAD
+=======
 =======
 ; W16      ; 136        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; W17      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; W18      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; W19      ; 133        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; W20      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; W21      ; 145        ; 4A       ; HEX0[3]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; W22      ; 140        ; 4A       ; HEX0[2]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y1       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; Y2       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
+<<<<<<< HEAD
+; Y3       ; 30         ; 2A       ; LEDR[3]                         ; output ; 3.3-V LVTTL  ;           ; Row I/O      ; Y               ; no       ; Off          ;
+; Y4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
+=======
 ; Y3       ; 30         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 <<<<<<< HEAD
 ; Y4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 =======
 ; Y4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Y5       ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; Y6       ;            ;          ; NC                              ;        ;              ;           ; --           ;                 ; --       ; --           ;
 ; Y7       ;            ; 3A       ; VREFB3AN0                       ; power  ;              ;           ; --           ;                 ; --       ; --           ;
@@ -1586,12 +1863,17 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; Y13      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 3.3V      ; --           ;                 ; --       ; --           ;
 ; Y14      ; 115        ; 4A       ; HEX2[3]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Y15      ; 117        ; 4A       ; HEX4[5]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y16      ; 123        ; 4A       ; HEX3[0]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y17      ; 125        ; 4A       ; HEX3[2]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y18      ;            ;          ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
 ; Y19      ; 141        ; 4A       ; HEX2[0]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y20      ; 139        ; 4A       ; HEX4[1]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
+<<<<<<< HEAD
+=======
 =======
 ; Y15      ; 117        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; Y16      ; 123        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -1600,6 +1882,7 @@ The pin-out file can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-Lo
 ; Y19      ; 141        ; 4A       ; HEX2[0]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y20      ; 139        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Y21      ; 143        ; 4A       ; HEX0[5]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y22      ; 138        ; 4A       ; HEX0[4]                         ; output ; 3.3-V LVTTL  ;           ; Column I/O   ; Y               ; no       ; Off          ;
 +----------+------------+----------+---------------------------------+--------+--------------+-----------+--------------+-----------------+----------+--------------+
@@ -1633,6 +1916,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; HEX2[5]  ; Missing drive strength and slew rate ;
 ; HEX2[6]  ; Missing drive strength and slew rate ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; HEX3[0]  ; Missing drive strength and slew rate ;
 ; HEX3[1]  ; Missing drive strength and slew rate ;
 ; HEX3[2]  ; Missing drive strength and slew rate ;
@@ -1654,6 +1940,18 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; HEX5[4]  ; Missing drive strength and slew rate ;
 ; HEX5[5]  ; Missing drive strength and slew rate ;
 ; HEX5[6]  ; Missing drive strength and slew rate ;
+<<<<<<< HEAD
+; LEDR[0]  ; Missing drive strength and slew rate ;
+; LEDR[1]  ; Missing drive strength and slew rate ;
+; LEDR[2]  ; Missing drive strength and slew rate ;
+; LEDR[3]  ; Missing drive strength and slew rate ;
+; LEDR[4]  ; Missing drive strength and slew rate ;
+; LEDR[5]  ; Missing drive strength and slew rate ;
+; LEDR[6]  ; Missing drive strength and slew rate ;
+; LEDR[7]  ; Missing drive strength and slew rate ;
+; LEDR[8]  ; Missing drive strength and slew rate ;
+; LEDR[9]  ; Missing drive strength and slew rate ;
+=======
 +----------+--------------------------------------+
 
 
@@ -1696,6 +1994,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;             |alt_u_div_q2f:divider|    ; 700.0 (700.0)        ; 695.5 (695.5)                    ; 1.0 (1.0)                                         ; 5.5 (5.5)                        ; 0.0 (0.0)            ; 1374 (1374)         ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Mod3|lpm_divide_75m:auto_generated|sign_div_unsign_anh:divider|alt_u_div_q2f:divider ; alt_u_div_q2f       ; work         ;
 +----------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------+---------------------+--------------+
 =======
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 +----------+--------------------------------------+
 
 
@@ -1704,9 +2003,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
+<<<<<<< HEAD
+; |TopLevel                  ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 62   ; 0            ; |TopLevel           ; TopLevel    ; work         ;
++----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
+=======
 ; |TopLevel                  ; 9.0 (9.0)            ; 9.0 (9.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 18 (18)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 31   ; 0            ; |TopLevel           ; TopLevel    ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1715,6 +2019,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 ; Name    ; Pin Type ; D1 ; D3_0 ; D3_1 ; D4 ; D5   ; D5 OE ; D5 OCT ; T11 (Postamble Gating) ; T11 (Postamble Ungating) ;
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+<<<<<<< HEAD
+; SW[0]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[1]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[2]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[3]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[4]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[5]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[6]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[7]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[8]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[9]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+=======
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; HEX0[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX0[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX0[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
@@ -1737,6 +2054,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX2[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX2[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; HEX3[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX3[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX3[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
@@ -1758,6 +2078,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX5[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX5[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX5[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+<<<<<<< HEAD
+; LEDR[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[7] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[8] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; LEDR[9] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
++---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+
+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; SW[0]               ;                   ;         ;
+; SW[1]               ;                   ;         ;
+; SW[2]               ;                   ;         ;
+; SW[3]               ;                   ;         ;
+; SW[4]               ;                   ;         ;
+; SW[5]               ;                   ;         ;
+; SW[6]               ;                   ;         ;
+; SW[7]               ;                   ;         ;
+; SW[8]               ;                   ;         ;
+; SW[9]               ;                   ;         ;
++---------------------+-------------------+---------+
+
+
++----------------------------------------------------+
+; Routing Usage Summary                              ;
++------------------------------+---------------------+
+; Routing Resource Type        ; Usage               ;
++------------------------------+---------------------+
+; Block interconnects          ; 0 / 140,056 ( 0 % ) ;
+; C12 interconnects            ; 0 / 6,048 ( 0 % )   ;
+; C2 interconnects             ; 0 / 54,648 ( 0 % )  ;
+; C4 interconnects             ; 0 / 25,920 ( 0 % )  ;
+; DQS bus muxes                ; 0 / 17 ( 0 % )      ;
+; DQS-18 I/O buses             ; 0 / 17 ( 0 % )      ;
+; DQS-9 I/O buses              ; 0 / 17 ( 0 % )      ;
+; Direct links                 ; 0 / 140,056 ( 0 % ) ;
+; Global clocks                ; 0 / 16 ( 0 % )      ;
+; Local interconnects          ; 0 / 36,960 ( 0 % )  ;
+; Quadrant clocks              ; 0 / 88 ( 0 % )      ;
+; R14 interconnects            ; 0 / 5,984 ( 0 % )   ;
+; R14/C12 interconnect drivers ; 0 / 9,504 ( 0 % )   ;
+; R3 interconnects             ; 0 / 60,192 ( 0 % )  ;
+; R6 interconnects             ; 0 / 127,072 ( 0 % ) ;
+; Spine clocks                 ; 0 / 120 ( 0 % )     ;
+; Wire stub REs                ; 0 / 7,344 ( 0 % )   ;
++------------------------------+---------------------+
+=======
 ; SW[1]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[2]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[4]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1971,6 +2347,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 +------------------------------------------+
@@ -2028,6 +2405,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Pin/Rules          ; IO_000002    ; IO_000003 ; IO_000001 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000022    ; IO_000021    ; IO_000046    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000047    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000034    ;
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
 <<<<<<< HEAD
+; Total Pass         ; 0            ; 62        ; 62        ; 0            ; 0            ; 62        ; 62        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 62        ; 62        ; 0            ;
+; Total Unchecked    ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
+; Total Inapplicable ; 62           ; 0         ; 0         ; 62           ; 62           ; 0         ; 0         ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 62           ; 0         ; 0         ; 62           ;
+; Total Fail         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
+; SW[0]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[1]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[2]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[3]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[4]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[5]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[6]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[7]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[8]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[9]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+=======
+<<<<<<< HEAD
 ; Total Pass         ; 0            ; 52        ; 52        ; 0            ; 0            ; 52        ; 52        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 52        ; 52        ; 0            ;
 ; Total Unchecked    ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
 ; Total Inapplicable ; 52           ; 0         ; 0         ; 52           ; 52           ; 0         ; 0         ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 52           ; 0         ; 0         ; 52           ;
@@ -2037,6 +2430,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Inapplicable ; 31           ; 0         ; 0         ; 31           ; 31           ; 0         ; 0         ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 31           ; 0         ; 0         ; 31           ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Total Fail         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; HEX0[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; HEX0[1]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; HEX0[2]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
@@ -2059,6 +2453,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX2[5]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; HEX2[6]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; HEX3[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; HEX3[1]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; HEX3[2]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
@@ -2080,6 +2477,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX5[4]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; HEX5[5]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; HEX5[6]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+<<<<<<< HEAD
+; LEDR[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[1]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[2]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[3]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[4]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[5]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[6]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[7]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[8]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; LEDR[9]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+=======
 ; SW[1]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[2]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[4]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
@@ -2102,6 +2511,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[8]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[9]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
 
 
@@ -2152,7 +2562,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+<<<<<<< HEAD
+Info (20029): Only one processor detected - disabling parallel compilation
+=======
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Info (119006): Selected device 5CEBA4F23C7 for design "DE0_CV_Default"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -2283,6 +2697,8 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "GPIO_1[9]" is assigned to location or region, but does not exist in design
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     Warning (15706): Node "HEX3[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX3[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX3[2]" is assigned to location or region, but does not exist in design
@@ -2305,10 +2721,13 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "HEX5[5]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX5[6]" is assigned to location or region, but does not exist in design
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
     Warning (15706): Node "KEY[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "KEY[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "KEY[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "KEY[3]" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
+=======
     Warning (15706): Node "LEDR[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[2]" is assigned to location or region, but does not exist in design
@@ -2319,6 +2738,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "LEDR[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[8]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[9]" is assigned to location or region, but does not exist in design
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
     Warning (15706): Node "PS2_CLK" is assigned to location or region, but does not exist in design
     Warning (15706): Node "PS2_CLK2" is assigned to location or region, but does not exist in design
     Warning (15706): Node "PS2_DAT" is assigned to location or region, but does not exist in design
@@ -2344,6 +2764,22 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
+Info (332104): Reading SDC File: 'DE0_CV_Default.sdc'
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+=======
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (332104): Reading SDC File: 'DE0_CV_Default.sdc'
 Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
@@ -2358,6 +2794,7 @@ Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targe
 Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
 Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
     Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -2370,6 +2807,9 @@ Warning (332068): No clocks defined in design.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 <<<<<<< HEAD
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+=======
+<<<<<<< HEAD
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:11
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
@@ -2381,19 +2821,36 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
 Info (11888): Total time spent on timing analysis during the Fitter is 0.62 seconds.
 =======
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+<<<<<<< HEAD
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y23 to location X10_Y33
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
+=======
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
+<<<<<<< HEAD
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info (144001): Generated suppressed messages file /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 160 warnings
+    Info: Peak virtual memory: 1706 megabytes
+    Info: Processing ended: Thu Mar  7 19:18:23 2019
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:22
+=======
 <<<<<<< HEAD
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:14
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
@@ -2413,11 +2870,16 @@ Info: Quartus Prime Fitter was successful. 0 errors, 191 warnings
     Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:28
 >>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
+<<<<<<< HEAD
+The suppressed messages can be found in /home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg.
+=======
 The suppressed messages can be found in /home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg.
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
