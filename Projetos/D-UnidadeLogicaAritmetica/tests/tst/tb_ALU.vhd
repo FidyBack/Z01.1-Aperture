@@ -24,6 +24,7 @@ component ALU is
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
 			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
+      sl:    in STD_LOGIC;                     -- coisa nova e divertida (shift left)
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
 			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
@@ -31,7 +32,7 @@ component ALU is
 end component;
 
    signal  inX, inY : STD_LOGIC_VECTOR(15 downto 0);
-   signal  inZX, inNX, inZY, inNY, inF, inNO, outZR, outNG : STD_LOGIC;
+   signal  inZX, inNX, inZY, inNY, inF, inNO, inSL, outZR, outNG : STD_LOGIC;
    signal  outSaida : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
@@ -45,6 +46,7 @@ begin
     ny => inNy,
     f  => inF,
     no => inNo,
+    sl => inSL,
     zr => outZr,
     ng => outNg,
     saida => outsaida);
