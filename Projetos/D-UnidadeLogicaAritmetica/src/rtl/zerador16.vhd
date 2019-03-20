@@ -14,9 +14,7 @@ entity zerador16 is
 end zerador16;
 
 architecture rtl of zerador16 is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
+
 
 begin
   y <= (others => '0') when z = '1' else
