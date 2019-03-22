@@ -19,7 +19,18 @@ architecture arch of Register16 is
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
 
+  component Register8 is
+	port(
+		clock:   in STD_LOGIC;
+		input:   in STD_LOGIC_VECTOR(7 downto 0);
+		load:    in STD_LOGIC;
+		output: out STD_LOGIC_VECTOR(7 downto 0)
+	);
+end entity;
+
 begin
 
+Register1: Register8 port map (clock=> clock, input=>input(7 downto 0), load=>load, y=>output(7 dowto 0));
+Register2: Register8 port map (clock=> clock, input=>input(15 dowto 7), load=>load, y=>output(15 dowto 7));
 
 end architecture;
