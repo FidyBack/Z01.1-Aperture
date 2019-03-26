@@ -19,7 +19,6 @@ architecture arch of Register8 is
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.]
 
-
   component BinaryDigit is
 	port(
 		clock:   in STD_LOGIC;
@@ -28,18 +27,18 @@ architecture arch of Register8 is
 		output: out STD_LOGIC
 	);
 
-end entity;
+	end component;
 
 begin
 
+out1: BinaryDigit port map (clock,input(0),load,output(0));
+out2: BinaryDigit port map (clock,input(1),load,output(1));
+out3: BinaryDigit port map (clock,input(2),load,output(2));
+out4: BinaryDigit port map (clock,input(3),load,output(3));
+out5: BinaryDigit port map (clock,input(4),load,output(4));
+out6: BinaryDigit port map (clock,input(5),load,output(5));
+out7: BinaryDigit port map (clock,input(6),load,output(6));
+out8: BinaryDigit port map (clock,input(7),load,output(7));
 
-Register1: BinaryDigit port map (clock=> clock, input=>input(0), load=>load, y=>output(0));
-Register2: BinaryDigit port map (clock=> clock, input=>input(1), load=>load, y=>output(1));
-Register3: BinaryDigit port map (clock=> clock, input=>input(2), load=>load, y=>output(3));
-Register4: BinaryDigit port map (clock=> clock, input=>input(3), load=>load, y=>output(3));
-Register5: BinaryDigit port map (clock=> clock, input=>input(4), load=>load, y=>output(4));
-Register6: BinaryDigit port map (clock=> clock, input=>input(5), load=>load, y=>output(5));
-Register7: BinaryDigit port map (clock=> clock, input=>input(6), load=>load, y=>output(6));
-Register8: BinaryDigit port map (clock=> clock, input=>input(7), load=>load, y=>output(7));
 
 end architecture;
