@@ -7,22 +7,24 @@ use ieee.std_logic_1164.all;
 			d:      in std_logic;
 			clear:  in std_logic;
 			preset: in std_logic;
-			q:     out std_logic
+			q:     out std_logic := '0'
 		);
 	end entity;
 
 architecture arch of FlipFlopD is
 
 begin
-process(clock, preset, clear)
-begin
-  if (clear = '1') then
-     Q <= '0';
-  elsif (preset = '1') then
-  	 Q <= '1';
-  elsif(rising_edge(clock)) then
-     Q <= D;
-  end if;
-end process;
+	process(clock, clear, preset)
+	begin
+	  if (clear = '1') then
+	     Q <= '0';
+	     
+	  elsif (preset = '1') then
+	     Q <= '1';
+
+	  elsif(rising_edge(clock)) then
+	     Q <= D;
+	  end if;
+	end process;
 
 end architecture;
