@@ -34,12 +34,6 @@ begin
 	  end if;
 	end process;
 
-process(clock)
-begin
-  if(rising_edge(clock)) then
-     Q <= D;
-  end if;
-end process;
 
 
 end architecture;
