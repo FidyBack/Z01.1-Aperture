@@ -1,10 +1,3 @@
-
--- Contador de 16bits
--- if (reset[t] == 1) out[t+1] = 0
--- else if (load[t] == 1)  out[t+1] = in[t]
--- else if (inc[t] == 1) out[t+1] = out[t] + 1
--- else out[t+1] = out[t]
-
 library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
