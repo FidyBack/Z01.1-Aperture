@@ -3,8 +3,12 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(5CEBA4F23) MfrSpec(OpMask(0) FullPath("/home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sof"));
+	P ActionCode(Cfg)
+<<<<<<< HEAD
+		Device PartName(5CEBA4F23) Path("/home/borg/Desktop/EDS/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/") File("DE0_CV_Default.sof") MfrSpec(OpMask(1));
+=======
+		Device PartName(5CEBA4F23) Path("/home/borg/Desktop/Z01.1-Aperture/Projetos/C-LogicaCombinacional/Quartus/") File("DE0_CV_Default.sof") MfrSpec(OpMask(1));
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 ChainEnd;
 

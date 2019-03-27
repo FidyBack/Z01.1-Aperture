@@ -1,11 +1,3 @@
---
--- Elementos de Sistemas - Aula 5 - Logica Combinacional
--- Rafael . Corsi @ insper . edu . br 
---
--- Arquivo exemplo para acionar os LEDs e ler os bottoes
--- da placa DE0-CV utilizada no curso de elementos de 
--- sistemas do 3s da eng. da computacao
-
 ----------------------------
 -- Bibliotecas ieee       --
 ----------------------------
@@ -32,10 +24,10 @@ architecture rtl of TopLevel is
 -- signals
 --------------
 
-  signal x : std_logic_vector(15 downto 0) := x"0073"; -- 115
-  signal y : std_logic_vector(15 downto 0) := x"005F"; -- 95
+  signal x : std_logic_vector(15 downto 0) := x"0001"; -- 1
+  signal y : std_logic_vector(15 downto 0) := x"0002"; -- 2
 
---------------
+--------------=
 -- component
 --------------
 
@@ -52,10 +44,10 @@ architecture rtl of TopLevel is
         no	    :	 IN STD_LOGIC;
         zr	    :	 OUT STD_LOGIC;
         ng	    :	 OUT STD_LOGIC;
+		  sl      : IN STD_LOGIC;
         saida	:	 OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
   END COMPONENT;
-
 
 ---------------
 -- implementacao
@@ -71,10 +63,12 @@ begin
     Ny                 => SW(3),
     F                  => SW(4),
     No                 => SW(5),
+	 Sl                 => SW(6),
     Zr                 => LEDR(8),
     Ng                 => LEDR(9),
     Saida(7 downto 0)  => LEDR(7 downto 0),
     Saida(15 downto 8) => Open
    );
+
 
 end rtl;

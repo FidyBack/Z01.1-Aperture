@@ -1,9 +1,13 @@
 Flow report for DE0_CV_Default
 <<<<<<< HEAD
-Wed Feb 27 14:43:49 2019
+Fri Mar  8 10:24:21 2019
 =======
-Wed Feb 27 15:12:52 2019
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
+<<<<<<< HEAD
+Fri Mar  8 20:04:56 2019
+=======
+Fri Mar  8 17:43:30 2019
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -41,14 +45,34 @@ refer to the applicable agreement for further details.
 
 
 
+<<<<<<< HEAD
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Flow Failed - Fri Mar  8 10:24:21 2019      ;
+; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name               ; DE0_CV_Default                              ;
+; Top-level Entity Name       ; TopLevel                                    ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CEBA4F23C7                                 ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+=======
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
 <<<<<<< HEAD
-; Flow Status                     ; Successful - Wed Feb 27 14:43:49 2019       ;
+; Flow Status                     ; Successful - Fri Mar  8 20:04:43 2019       ;
 =======
-; Flow Status                     ; Successful - Wed Feb 27 15:12:48 2019       ;
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
+; Flow Status                     ; Successful - Fri Mar  8 17:43:25 2019       ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
@@ -56,32 +80,25 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
 <<<<<<< HEAD
-; Logic utilization (in ALMs)     ; N/A                                         ;
+; Logic utilization (in ALMs)     ; 3,304 / 18,480 ( 18 % )                     ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 20                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
+; Total pins                      ; 52 / 224 ( 23 % )                           ;
 =======
-; Logic utilization (in ALMs)     ; 1 / 18,480 ( < 1 % )                        ;
+; Logic utilization (in ALMs)     ; 9 / 18,480 ( < 1 % )                        ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 20 / 224 ( 9 % )                            ;
+; Total pins                      ; 31 / 224 ( 14 % )                           ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-<<<<<<< HEAD
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-=======
 ; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
 ; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
 +---------------------------------+---------------------------------------------+
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 +-----------------------------------------+
@@ -90,10 +107,14 @@ refer to the applicable agreement for further details.
 ; Option            ; Setting             ;
 +-------------------+---------------------+
 <<<<<<< HEAD
-; Start date & time ; 02/27/2019 14:43:28 ;
+; Start date & time ; 03/08/2019 10:24:03 ;
 =======
-; Start date & time ; 02/27/2019 15:12:14 ;
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
+<<<<<<< HEAD
+; Start date & time ; 03/08/2019 20:03:09 ;
+=======
+; Start date & time ; 03/08/2019 17:42:45 ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE0_CV_Default      ;
 +-------------------+---------------------+
@@ -105,10 +126,14 @@ refer to the applicable agreement for further details.
 ; Assignment Name                     ; Value                                  ; Default Value                        ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
 <<<<<<< HEAD
-; COMPILER_SIGNATURE_ID               ; 8796760566721.155128940802530          ; --                                   ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 8796760566721.155205144303328          ; --                                   ; --          ; --         ;
 =======
-; COMPILER_SIGNATURE_ID               ; 229335795800674.155129113404567        ; --                                   ; --          ; --         ;
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID               ; 102021908929880.155208618911750        ; --                                   ; --          ; --         ;
+=======
+; COMPILER_SIGNATURE_ID               ; 110073159329384.155207776510879        ; --                                   ; --          ; --         ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit                             ; --          ; --         ;
 ; FLOW_ENABLE_RTL_VIEWER              ; On                                     ; Off                                  ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                                   ; --          ; --         ;
@@ -135,8 +160,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 1014 MB             ; 00:00:18                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 1008 MB             ; 00:00:15                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:15                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -153,11 +178,19 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 1023 MB             ; 00:00:26                           ;
-; Fitter                    ; 00:00:16     ; 1.0                     ; 1808 MB             ; 00:00:23                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 957 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 1065 MB             ; 00:00:04                           ;
-; Total                     ; 00:00:37     ; --                      ; --                  ; 00:00:57                           ;
+<<<<<<< HEAD
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 1105 MB             ; 00:00:38                           ;
+; Fitter                    ; 00:01:04     ; 1.1                     ; 1894 MB             ; 00:02:10                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 981 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:13     ; 1.6                     ; 1151 MB             ; 00:00:19                           ;
+; Total                     ; 00:01:45     ; --                      ; --                  ; 00:03:13                           ;
+=======
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 1014 MB             ; 00:00:32                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 1831 MB             ; 00:00:27                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 951 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 1083 MB             ; 00:00:05                           ;
+; Total                     ; 00:00:44     ; --                      ; --                  ; 00:01:09                           ;
+>>>>>>> 99652f75951229133ce38de68a17322d9f0c3c4f
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -166,12 +199,12 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+----------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; luvi             ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
-; Fitter                    ; luvi             ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
-; Assembler                 ; luvi             ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
-; TimeQuest Timing Analyzer ; luvi             ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; Analysis & Synthesis      ; borg-borg        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; Fitter                    ; borg-borg        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; Assembler                 ; borg-borg        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; TimeQuest Timing Analyzer ; borg-borg        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 ------------
@@ -183,7 +216,7 @@ quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -
 quartus_fit --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 quartus_asm --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 quartus_sta DE0_CV_Default -c DE0_CV_Default
->>>>>>> 45a9df9efa20ad6b33899f1bb2d00b59de423fad
+>>>>>>> 725c6ad7edf5348dc2b2f7db1da0522b54456566
 
 
 
