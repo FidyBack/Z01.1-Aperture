@@ -1,6 +1,3 @@
--- Elementos de Sistemas
--- by Luciano Soares
--- Ram8.vhd
 
 Library ieee;
 use ieee.std_logic_1164.all;
@@ -16,9 +13,6 @@ entity Ram8 is
 end entity;
 
 architecture arch of ram8 is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
 
  component Mux8Way16 is
 	port ( 
@@ -63,19 +57,19 @@ signal OL0, OL1, OL2, OL3, OL4, OL5, OL6, OL7, OutL: STD_LOGIC_VECTOR(15 downto 
 
 begin
 
-DMux: DMux8Way port map(load, address, Q(0), Q(1), Q(2),Q(3), Q(4), Q(5), Q(6), Q(7));
+	DMux: DMux8Way port map(load, address, Q(0), Q(1), Q(2),Q(3), Q(4), Q(5), Q(6), Q(7));
 
-Reg16: Register16 port map(clock, input, load, OutL);
+	Reg16: Register16 port map(clock, input, load, OutL);
 
-OL0 <= OutL when q(0) = '1';
-OL1 <= OutL when q(1) = '1';
-OL2 <= OutL when q(2) = '1';
-OL3 <= OutL when q(3) = '1';
-OL4 <= OutL when q(4) = '1';
-OL5 <= OutL when q(5) = '1';
-OL6 <= OutL when q(6) = '1';
-OL7 <= OutL when q(7) = '1';
+	OL0 <= OutL when q(0) = '1';
+	OL1 <= OutL when q(1) = '1';
+	OL2 <= OutL when q(2) = '1';
+	OL3 <= OutL when q(3) = '1';
+	OL4 <= OutL when q(4) = '1';
+	OL5 <= OutL when q(5) = '1';
+	OL6 <= OutL when q(6) = '1';
+	OL7 <= OutL when q(7) = '1';
 
-Mux: Mux8Way16 port map(OL0, OL1, OL2, OL3, OL4, OL5, OL6, OL7, address, output);
+	Mux: Mux8Way16 port map(OL0, OL1, OL2, OL3, OL4, OL5, OL6, OL7, address, output);
 
 end architecture;
