@@ -1,6 +1,3 @@
--- Elementos de Sistemas
--- by Luciano Soares
--- Ram8.vhd
 
 Library ieee;
 use ieee.std_logic_1164.all;
@@ -16,9 +13,6 @@ entity Ram8 is
 end entity;
 
 architecture arch of ram8 is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
 
  component Mux8Way16 is
 	port ( 

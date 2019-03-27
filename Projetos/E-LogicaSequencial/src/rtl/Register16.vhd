@@ -32,7 +32,6 @@ end component;
 begin
 
 Register1: Register8 port map (clock=> clock, input=>input(7 downto 0), load=>load, output=>output(7 downto 0));
-
 Register2: Register8 port map (clock=> clock, input=>input(15 downto 8), load=>load, output=>output(15 downto 8));
 
 end architecture;

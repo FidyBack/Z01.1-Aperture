@@ -15,10 +15,7 @@ entity BinaryDigit is
 end entity;
 
 architecture rtl of BinaryDigit is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
-  
+
 	component FlipFlopD is 
   		port(
   			clock:  in  STD_LOGIC;
