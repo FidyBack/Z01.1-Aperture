@@ -1,7 +1,3 @@
--- Elementos de Sistemas
--- by Luciano Soares
--- FlipFlopD.vhd
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -16,9 +12,6 @@ use ieee.std_logic_1164.all;
 	end entity;
 
 architecture arch of FlipFlopD is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
 
 begin
 	process(clock, clear, preset)
@@ -33,7 +26,5 @@ begin
 	     Q <= D;
 	  end if;
 	end process;
-
-
 
 end architecture;
