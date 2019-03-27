@@ -1,6 +1,3 @@
--- Elementos de Sistemas
--- by Luciano Soares
--- zerador16.vhd
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
