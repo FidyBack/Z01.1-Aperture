@@ -1,3 +1,4 @@
+
 -- Elementos de Sistemas
 -- by Luciano Soares
 -- Register16.vhd
@@ -26,11 +27,12 @@ architecture arch of Register16 is
 		load:    in STD_LOGIC;
 		output: out STD_LOGIC_VECTOR(7 downto 0)
 	);
-end entity;
+end component;
 
 begin
 
-Register1: Register8 port map (clock=> clock, input=>input(7 downto 0), load=>load, y=>output(7 dowto 0));
-Register2: Register8 port map (clock=> clock, input=>input(15 dowto 7), load=>load, y=>output(15 dowto 7));
+Register1: Register8 port map (clock=> clock, input=>input(7 downto 0), load=>load, output=>output(7 downto 0));
+
+Register2: Register8 port map (clock=> clock, input=>input(15 downto 8), load=>load, output=>output(15 downto 8));
 
 end architecture;
