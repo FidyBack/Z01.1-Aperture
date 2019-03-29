@@ -1,5 +1,4 @@
--- Incrementador de 16 bits
--- adiciona 1 ao valore de entrada (adição aritmética)
+
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
@@ -12,9 +11,6 @@ entity Inc16 is
 end entity;
 
 architecture rtl of Inc16 is
-  -- Aqui declaramos sinais (fios auxiliares)
-  -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
 
   signal w: STD_LOGIC_VECTOR(15 downto 0);
 

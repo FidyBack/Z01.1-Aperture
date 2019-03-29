@@ -26,5 +26,4 @@ begin
 	     Q <= D;
 	  end if;
 	end process;
-
 end architecture;
