@@ -9,3 +9,28 @@
 ;
 ; Divisao entre numeros inteiros positivos
 ; ####################################################################
+
+leaw $0, %A
+movw (%A), %S
+
+leaw $2, %A
+leaw $0, (%A)
+
+WHILE:
+  leaw $1, %A
+  movw (%A), %D
+	subw %S, %D, %S
+
+	leaw $END, %A
+	jl %S
+	nop
+
+	leaw $2, %A
+	movw (%A), %D
+	incw %D
+	movw %D, (%A)
+
+	leaw $WHILE, %A
+	jmp
+	nop
+END:

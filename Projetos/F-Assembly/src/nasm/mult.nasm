@@ -10,8 +10,10 @@
 INICIO:
   leaw $0, %A
   movw %A, %S
+
   leaw $1, %A
   movw (%A), %D
+  
   leaw $3, %A
   movw $0,(%A)
  
