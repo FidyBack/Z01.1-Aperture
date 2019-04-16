@@ -7,3 +7,22 @@
 ; Eleva ao quadrado o valor da RAM[1] e armazena o resultado na RAM[0].
 ; Só funciona com números positivos
 ; ####################################################################
+
+BEGIN:
+ leaw $0, %A
+ movw $0, (%A)
+ leaw $1, %A
+ movw (%A), %D
+ leaw $2, %A
+ movw %D, (%A)
+
+WHILE:
+ leaw $0, %A
+ addw (%A), %D, %S
+ movw %S, (%A)
+ leaw $2, %A
+ movw (%A), %S
+ decw %S
+ movw %S, (%A)
+ leaw $WHILE, %A
+ jne %S
