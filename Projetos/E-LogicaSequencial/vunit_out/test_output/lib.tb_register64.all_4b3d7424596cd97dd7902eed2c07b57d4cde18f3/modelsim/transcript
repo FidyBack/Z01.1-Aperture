@@ -1,0 +1,24 @@
+# Reading pref.tcl
+# source "/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_register64.all_4b3d7424596cd97dd7902eed2c07b57d4cde18f3/modelsim/gui.do"
+# vsim -wlf /home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_register64.all_4b3d7424596cd97dd7902eed2c07b57d4cde18f3/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_register64(tb) -L vunit_lib -L lib -g/tb_register64/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_register64.all_4b3d7424596cd97dd7902eed2c07b57d4cde18f3/,tb path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/tests/tst/,use_color : false" 
+# Start time: 22:42:00 on Mar 26,2019
+# ** Warning: Design size of 24850 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+# FATAL ERROR: Unable to read lock file necessary for use of uncounted nodelocked license. Exiting.
+# End time: 22:47:01 on Mar 26,2019, Elapsed time: 0:05:01
+# Errors: 0, Warnings: 1

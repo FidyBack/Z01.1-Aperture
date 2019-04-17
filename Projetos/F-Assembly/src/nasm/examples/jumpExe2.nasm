@@ -3,10 +3,10 @@
 	;; Exemplo de salto condicional
 	;;
 	;; s = 0
-   ;; d = 0
+  ;; d = 0
 	;; while(D < 2)
 	;;  s = s+1
-   ;;  d = d+1
+  ;;  d = d+1
 
 INICIO:
   leaw $0, %A

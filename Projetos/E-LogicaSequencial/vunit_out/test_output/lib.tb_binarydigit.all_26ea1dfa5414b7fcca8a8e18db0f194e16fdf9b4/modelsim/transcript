@@ -1,0 +1,39 @@
+# Reading pref.tcl
+# source "/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/gui.do"
+# vsim -wlf /home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_binarydigit(tb) -L vunit_lib -L lib -g/tb_binarydigit/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/tests/tst/,use_color : false" 
+# Start time: 22:37:34 on Mar 26,2019
+# ** Warning: Design size of 20923 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+add wave -position end  sim:/tb_binarydigit/inClock
+# ** Error: Cannot open WLF file: "/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf"
+#           No such file or directory.
+#           Attempting to use alternate WLF file "/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/wlftv6f7Zr".
+# ** Error: Cannot open WLF file: "/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/wlftv6f7Zr"
+#           No such file or directory.
+#           Attempting to use alternate WLF file "./wlft65nk8I".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: /home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf
+#           Using alternate file: ./wlft65nk8I
+add wave -position end  sim:/tb_binarydigit/inInput
+add wave -position end  sim:/tb_binarydigit/inLoad
+add wave -position end  sim:/tb_binarydigit/outOutput
+vunit_run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Break in Subprogram stop at /usr/local/lib/python3.6/dist-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 13
+# false
+# End time: 22:40:58 on Mar 26,2019, Elapsed time: 0:03:24
+# Errors: 2, Warnings: 3

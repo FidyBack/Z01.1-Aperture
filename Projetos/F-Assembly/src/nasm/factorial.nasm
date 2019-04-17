@@ -1,4 +1,3 @@
-; ####################################################################
 ; Arquivo: Factorial.nasm
 ; Curso: Elementos de Sistemas
 ; Criado por: Luciano Soares
@@ -65,4 +64,3 @@ ZERO:
 FINAL:
 	leaw $1, %A
 	movw %S, (%A)
-
