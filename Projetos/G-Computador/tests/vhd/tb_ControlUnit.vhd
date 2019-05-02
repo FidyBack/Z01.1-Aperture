@@ -99,7 +99,7 @@ begin
     -- mov $0, %D, %S, %A
     instruction <= "10" & "000" & "111111" & "1110" & "000";
     wait until clk = '1';
-    assert(loadA  = '1' and loadD  = '1' and loadS = '1' and loadM  = '0' and  loadPC = '0' and
+    assert(loadA  mux= '1' and loadD  = '1' and loadS = '1' and loadM  = '0' and  loadPC = '0' and
            zx = '1' and nx = '1' and zy = '1' and ny = '1' and f = '1' and no = '1')
       report " **Falha** mov %0, %D, %S, %A " severity error;
 
