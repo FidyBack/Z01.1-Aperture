@@ -100,6 +100,26 @@ signal ram16_out, novoSW, regOutput: std_logic_vector(15 downto 0);
 
 begin
 
-	
+	selec <= "00" when ADDRESS <= "011111111111111" else
+	"10" when ADDRESS = "101001011000000" else 
+	"01" when ADDRESS >= "100000000000000" and ADDRESS <= "101001010111111" else 
+	"11";
+
+	selec2 <= "00" when ADDRESS = "101001011000001" else
+	"01";  
+
+	dmux: DMux4Way port map(LOAD, selec, dmuxOut_0, dmuxOut_1, dmuxOut_2, dmuxOut_3);
+
+	ram: RAM16K port map(CLK_FAST, ADDRESS(13 downto 0), INPUT, dmuxOut_0, ram16_out);
+
+	scr: Screen port map(CLK_FAST, CLK_SLOW, RST, INPUT, dmuxOut_1, ADDRESS(13 downto 0), LCD_INIT_OK, LCD_CS_N, LCD_D, LCD_RD_N, LCD_RESET_N, LCD_RS, LCD_WR_N);
+
+	reg: Register16 port map(CLK_SLOW, INPUT, dmuxOut_2, regOutput);
+
+	mux: Mux4Way16 port map (selec2, novoSW, ram16_out, "0000000000000000", "0000000000000000", OUTPUT);
+
+	LED <= regOutput(9 downto 0); 
+
+	novoSW <= "000000" & SW;
 
 END logic;
