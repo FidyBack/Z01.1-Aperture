@@ -40,11 +40,11 @@ proc _vunit_source_init_files_after_load {} {
 
 proc vunit_load {{vsim_extra_args ""}} {
     set vsim_failed [catch {
-        eval vsim ${vsim_extra_args} {-wlf {/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_comparador16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/,tb path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/tests/tst/,use_color : true"} lib.tb_comparador16(tb)   -L vunit_lib -L lib}
+        eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_comparador16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/,tb path : /home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/tests/tst/,use_color : true"} lib.tb_comparador16(tb)   -L vunit_lib -L lib}
     }]
 
     if {${vsim_failed}} {
-       echo Command 'vsim ${vsim_extra_args} -wlf {/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_comparador16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/,tb path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/tests/tst/,use_color : true"} lib.tb_comparador16(tb)   -L vunit_lib -L lib' failed
+       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_comparador16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/,tb path : /home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/tests/tst/,use_color : true"} lib.tb_comparador16(tb)   -L vunit_lib -L lib' failed
        echo Bad flag from vsim_extra_args?
        return true
     }
@@ -67,7 +67,7 @@ proc vunit_load {{vsim_extra_args ""}} {
 }
 
 proc is_test_suite_done {} {
-    set fd [open "/home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/vunit_results" "r"]
+    set fd [open "/home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/vunit_results" "r"]
     set contents [read $fd]
     close $fd
     set lines [split $contents "
@@ -110,7 +110,7 @@ proc vunit_compile {} {
     set cmd_show {/usr/bin/python3 -u ./testeULA.py --compile}
     puts "Re-compiling using command ${cmd_show}"
 
-    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeULA.py', '--compile'], cwd='/home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeULA.py', '--compile'], cwd='/home/borg/Desktop/Z01.1-Aperture/Projetos/D-UnidadeLogicaAritmetica', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
 
     while {[gets $chan line] >= 0} {
         puts $line

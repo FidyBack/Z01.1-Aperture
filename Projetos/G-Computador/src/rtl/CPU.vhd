@@ -39,6 +39,7 @@ architecture arch of CPU is
       ny:    in STD_LOGIC;
       f:     in STD_LOGIC;
       no:    in STD_LOGIC;
+      sl:    in STD_LOGIC; 
       zr:    out STD_LOGIC;
       ng:    out STD_LOGIC;
       saida: out STD_LOGIC_VECTOR(15 downto 0)
@@ -113,31 +114,29 @@ S_register: Register16 port map (clock,s_ALUout,c_loadS,s_regSout);
 
 D_register: Register16 port map (clock,s_ALUout,c_loadD,s_regDout);
 
-muxALUI: Mux16 port map (s_ALUout,instruction,c_muxALUI_A,s_muxALUI_Aout);
+muxALUI: Mux16 port map (s_ALUout,instruction(15 downto 0),c_muxALUI_A,s_muxALUI_Aout);
 
 A_register: Register16 port map (clock,s_muxALUI_Aout,c_loadA,s_regAout);
 
-muxA/M: Mux16 port map (s_regAout,inM,c_muxAM,s_muxAM_out);
-muxAM/D: Mux16 port map (s_regDout,s_muxAM_out,c_muxAMD_ALU,s_muxAMD_ALUout);
-muxS/D: Mux16 port map (s_regSout,s_regDout,c_muxSD_ALU,s_muxSDout);
+muxAM: Mux16 port map (s_regAout,inM,c_muxAM,s_muxAM_out);
+muxAMD: Mux16 port map (s_regDout,s_muxAM_out,c_muxAMD_ALU,s_muxAMD_ALUout);
+muxSD: Mux16 port map (s_regSout,s_regDout,c_muxSD_ALU,s_muxSDout);
 
 
-ALU: ALU port map (s_muxSDout,s_muxAMD_ALUout,c_zx,c_nx,c_zy,c_ny,c_f,c_no,c_zr,c_ng,s_ALUout);
+ALUu: ALU port map (s_muxSDout,s_muxAMD_ALUout,c_zx,c_nx,c_zy,c_ny,c_f,c_no,'0',c_zr,c_ng,s_ALUout);
 
 
-PC: pc port map (clock,"1",c_loadPC,reset,s_regAout,s_pcout);
+ProgramCounter: pc port map (clock,'1',c_loadPC,reset,
+    input     => s_regAout,
+    output    => s_pcout
+);
 
-ControlUnit: ControlUnit port map (instruction,c_zr,c_ng,c_muxALUI_A,c_muxAM,c_muxAMD_ALU,c_muxSD_ALU,c_zx, c_nx, c_zy, c_ny, c_f,c_no,c_loadA, c_loadD, c_loadS, c_loadM, c_loadPC);
+ControlUnitz: ControlUnit port map (instruction,c_zr,c_ng,c_muxALUI_A,c_muxAM,c_muxAMD_ALU,c_muxSD_ALU,c_zx, c_nx, c_zy, c_ny, c_f,c_no,c_loadA, c_loadD, c_loadS, writeM, c_loadPC);
 
 addressM <= s_regAout(14 downto 0);
 
 outM <= s_ALUout;
 
 pcout <= s_pcout(14 downto 0);
-
-
-
-
-
 
 end architecture;

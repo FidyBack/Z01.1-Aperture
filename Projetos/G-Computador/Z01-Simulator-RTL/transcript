@@ -4,7 +4,7 @@
 # 1
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:30:25 on Apr 29,2019
+# Start time: 22:39:50 on May 02,2019
 # vcom -reportprogress 300 -work work ../../C-LogicaCombinacional/src/rtl/And16.vhd ../../C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd ../../C-LogicaCombinacional/src/rtl/DMux2Way.vhd ../../C-LogicaCombinacional/src/rtl/DMux4Way.vhd ../../C-LogicaCombinacional/src/rtl/DMux8Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux16.vhd ../../C-LogicaCombinacional/src/rtl/Mux2Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux4Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux4Way16.vhd ../../C-LogicaCombinacional/src/rtl/Mux8Way.vhd ../../C-LogicaCombinacional/src/rtl/Mux8Way16.vhd ../../C-LogicaCombinacional/src/rtl/Nand.vhd ../../C-LogicaCombinacional/src/rtl/Nor8Way.vhd ../../C-LogicaCombinacional/src/rtl/Not16.vhd ../../C-LogicaCombinacional/src/rtl/Or16.vhd ../../C-LogicaCombinacional/src/rtl/Or8Way.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -41,10 +41,10 @@
 # -- Compiling architecture arch of Or16
 # -- Compiling entity Or8Way
 # -- Compiling architecture arch of Or8Way
-# End time: 13:30:25 on Apr 29,2019, Elapsed time: 0:00:00
+# End time: 22:39:50 on May 02,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:30:25 on Apr 29,2019
+# Start time: 22:39:50 on May 02,2019
 # vcom -reportprogress 300 -work work ../../E-LogicaSequencial/src/rtl/BinaryDigit.vhd ../../E-LogicaSequencial/src/rtl/FlipFlopD.vhd ../../E-LogicaSequencial/src/rtl/PC.vhd ../../E-LogicaSequencial/src/rtl/Ram4K.vhd ../../E-LogicaSequencial/src/rtl/Ram512.vhd ../../E-LogicaSequencial/src/rtl/Ram64.vhd ../../E-LogicaSequencial/src/rtl/Ram8.vhd ../../E-LogicaSequencial/src/rtl/Register16.vhd ../../E-LogicaSequencial/src/rtl/Register32.vhd ../../E-LogicaSequencial/src/rtl/Register64.vhd ../../E-LogicaSequencial/src/rtl/Register8.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -72,10 +72,10 @@
 # -- Compiling architecture arch of Register64
 # -- Compiling entity Register8
 # -- Compiling architecture arch of Register8
-# End time: 13:30:25 on Apr 29,2019, Elapsed time: 0:00:00
+# End time: 22:39:50 on May 02,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:30:25 on Apr 29,2019
+# Start time: 22:39:50 on May 02,2019
 # vcom -reportprogress 300 -work work ../../D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/shiftLeft16.vhd ../../D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -98,41 +98,165 @@
 # -- Compiling architecture rtl of shiftLeft16
 # -- Compiling entity zerador16
 # -- Compiling architecture rtl of zerador16
-# End time: 13:30:25 on Apr 29,2019, Elapsed time: 0:00:00
+# End time: 22:39:50 on May 02,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:30:25 on Apr 29,2019
+# Start time: 22:39:50 on May 02,2019
 # vcom -reportprogress 300 -work work ../src/rtl/CPU.vhd ../src/rtl/Computador.vhd ../src/rtl/ControlUnit.vhd ../src/rtl/MemoryIO.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity CPU
 # -- Compiling architecture arch of CPU
-# ** Error: ../src/rtl/CPU.vhd(120): (vcom-1136) Unknown identifier "muxA".
-# ** Error: ../src/rtl/CPU.vhd(120): (vcom-1136) Unknown identifier "M".
-# ** Error: ../src/rtl/CPU.vhd(120): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: ../src/rtl/CPU.vhd(121): (vcom-1136) Unknown identifier "muxAM".
-# ** Error: ../src/rtl/CPU.vhd(121): (vcom-1136) Unknown identifier "D".
-# ** Error: ../src/rtl/CPU.vhd(121): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: ../src/rtl/CPU.vhd(122): (vcom-1136) Unknown identifier "muxS".
-# ** Error: ../src/rtl/CPU.vhd(122): (vcom-1136) Unknown identifier "D".
-# ** Error: ../src/rtl/CPU.vhd(122): near ":": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: ../src/rtl/CPU.vhd(125): Symbol "ALU" has already been declared in this region.
-# ** Error (suppressible): ../src/rtl/CPU.vhd(125): (vcom-1141) Identifier "ALU" does not identify a component declaration.
-# ** Error: ../src/rtl/CPU.vhd(128): Symbol "pc" has already been declared in this region.
-# ** Error (suppressible): ../src/rtl/CPU.vhd(128): (vcom-1141) Identifier "PC" does not identify a component declaration.
-# ** Error: ../src/rtl/CPU.vhd(130): Symbol "ControlUnit" has already been declared in this region.
-# ** Error (suppressible): ../src/rtl/CPU.vhd(130): (vcom-1141) Identifier "ControlUnit" does not identify a component declaration.
-# ** Error (suppressible): ../src/rtl/CPU.vhd(116): (vcom-1272) Length of formal "b" is 16; length of actual is 18.
-# ** Error: ../src/rtl/CPU.vhd(143): VHDL Compiler exiting
-# End time: 13:30:25 on Apr 29,2019, Elapsed time: 0:00:00
-# Errors: 17, Warnings: 0
-# ** Error: /home/borg/intelFPGA_lite/17.1/modelsim_ase/linuxaloem/vcom failed.
-# Error in macro /home/borg/Desktop/Z01.1-Aperture/Projetos/G-Computador/Z01-Simulator-RTL/do/load.do line 7
-# /home/borg/intelFPGA_lite/17.1/modelsim_ase/linuxaloem/vcom failed.
-#     while executing
-# "vcom -reportprogress 300 -work work ../src/rtl/*.vhd"
-# Break key hit
-# Break key hit
-# Break key hit
-# ambiguous command name "c": calcDefaultSignalModeValue case cat catch cd cdbg cdbg_mode cdbg_wait_for_starting cdump chan change check check_svver_available check_viewer checkpoint checkpointDone checkpointError ciid class cleanupGui clock close clp cmdSplit code column2tok compare compareOptionsRule compareSetDefaults compile concat config configbody configure connect_to_kernel console cont context contextOf continue convertVlogExtId cover_save_create_ucdb coverage createArgsForFrames createFrames createSourceInfo create_rpc_server
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Computador
+# -- Compiling architecture logic of Computador
+# -- Compiling entity ControlUnit
+# -- Compiling architecture arch of ControlUnit
+# -- Compiling entity MemoryIO
+# -- Compiling architecture logic of MemoryIO
+# End time: 22:39:50 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:50 on May 02,2019
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/PLL/PLL_sim/PLL.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Compiling entity PLL
+# -- Compiling architecture RTL of PLL
+# End time: 22:39:50 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:50 on May 02,2019
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/RAM/RAM16K.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity RAM16K
+# -- Compiling architecture SYN of ram16k
+# End time: 22:39:51 on May 02,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:51 on May 02,2019
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/ROM/ROM32K.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity ROM32K
+# -- Compiling architecture SYN of rom32k
+# End time: 22:39:51 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:51 on May 02,2019
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/Screen/FIFO/FIFO16x4096.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FIFO16x4096
+# -- Compiling architecture SYN of fifo16x4096
+# End time: 22:39:51 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:51 on May 02,2019
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/Screen/Screen.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Screen
+# -- Compiling architecture logic of Screen
+# End time: 22:39:51 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:39:51 on May 02,2019
+# vcom -reportprogress 300 -work work ../tests/Computador_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Computador_tb
+# -- Compiling architecture rtl of Computador_tb
+# End time: 22:39:51 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.computador_tb 
+# Start time: 22:39:51 on May 02,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.computador_tb(rtl)
+# Loading work.computador(logic)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading work.pll(rtl)
+# Loading sv_std.std
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.altera_pll
+# Loading altera_lnsim.dps_extra_kick
+# Loading altera_lnsim.dprio_init
+# Loading altera_lnsim.altera_generic_pll_functions
+# Loading altera_lnsim.generic_pll
+# Loading work.cpu(arch)
+# Loading work.register16(arch)
+# Loading work.register8(arch)
+# Loading work.binarydigit(rtl)
+# Loading work.mux2way(arch)
+# Loading work.flipflopd(arch)
+# Loading work.mux16(arch)
+# Loading work.alu(rtl)
+# Loading work.zerador16(rtl)
+# Loading work.inversor16(rtl)
+# Loading work.add16(rtl)
+# Loading work.fulladder(rtl)
+# Loading work.and16(arch)
+# Loading work.shiftleft16(rtl)
+# Loading work.comparador16(rtl)
+# Loading work.pc(arch)
+# Loading work.inc16(rtl)
+# Loading work.controlunit(arch)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom32k(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.memoryio(logic)
+# Loading work.dmux4way(rtl)
+# Loading work.ram16k(syn)
+# Loading work.screen(logic)
+# Loading work.mux4way16(arch)
+# ** Warning: Design size of 17685 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/scr/LCD_CS_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/scr/LCD_RD_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/scr/LCD_RESET_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/scr/LCD_RS has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/scr/LCD_WR_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (computador_tb.c1.PLL_RTL.PLL_inst.pll_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = computador_tb.c1.PLL_RTL.PLL_inst.pll_altera_pll_altera_pll_i_1098.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 100 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 5000.000000
+# Info: output_clock_low_period = 5000.000000
+# Info: hierarchical_name = computador_tb.c1.PLL_RTL.PLL_inst.pll_altera_pll_altera_pll_i_1098.new_model.gpll.UI
+# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# End time: 22:39:51 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7

@@ -28,21 +28,21 @@ begin
 loadS <= instruction(17) and instruction(5);
 loadD <= instruction(17) and instruction(4);
 loadM <= instruction(17) and instruction(3);
-loadA <= (instruction(17) and instruction(6)) or NOT(instruction(17));
+loadA <= instruction(6) or NOT(instruction(17));
 
 
 
-zx <= instruction(17) and instruction(12);
-nx <= instruction(17) and instruction(11);
-zy <= instruction(17) and instruction(10);
-ny <= instruction(17) and instruction(9);
-f <= instruction(17) and instruction(8);
-no <= instruction(17) and instruction(7);
+zx <= instruction(12);
+nx <= instruction(11);
+zy <= instruction(10);
+ny <= instruction(9);
+f <= instruction(8);
+no <= instruction(7);
 
 muxALUI_A <= not instruction(17);
-muxAMD_ALU <= instruction(17) and NOT(instruction(15));
-muxSD_ALU <= instruction(17) and instruction(13);
-muxAM <= instruction(14) and instruction(17);
+muxAMD_ALU <= NOT(instruction(15));
+muxSD_ALU <= NOT(instruction(13)) and NOT(instruction(15));
+muxAM <= instruction(14) and NOT(instruction(15));
 loadPC <= instruction(17) and ((instruction(2) and ng) or (instruction(1) and zr) or (instruction(0) and NOT(ng) and NOT(zr)));
 
 end architecture;
