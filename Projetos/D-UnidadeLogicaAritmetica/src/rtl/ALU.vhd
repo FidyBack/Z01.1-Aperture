@@ -68,13 +68,6 @@ architecture  rtl OF alu is
 		);
 	end component;
 
-	component shiftLeft16 is
-		port(
-			z   : in STD_LOGIC;
-			a   : in STD_LOGIC_VECTOR(15 downto 0);
-			y   : out STD_LOGIC_VECTOR(15 downto 0)
-			);
-	end component;
 
    SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,invout,precomp: std_logic_vector(15 downto 0);
 
@@ -87,8 +80,7 @@ invey: inversor16 port map (z=> ny, a=>zyout, y=>nyout);
 add: Add16 port map (a=>nxout, b=>nyout, q=>adderout);
 Aand: and16 port map (a=>nxout, b=>nyout, q=>andout);
 mux: mux16 port map (sel=>f, a=>andout, b=>adderout, q=>muxout);
-inver: inversor16 port map (z=> no, a=>muxout, y=>invout);
-shift: shiftLeft16 port map (z=> sl, a=>invout, y=>precomp);
+inver: inversor16 port map (z=> no, a=>muxout, y=>precomp);
 
 comparator: comparador16 port map(a=>precomp,zr=>Zr,ng=>Ng);
 
