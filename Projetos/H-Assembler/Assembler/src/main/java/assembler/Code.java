@@ -37,12 +37,20 @@ public class Code {
      * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
+    
     public static String jump(String[] mnemnonic) {
-
-
-        return "";
+        switch (mnemnonic[0]){
+            case "jmp"  : return "111";
+            case "jg"   : return "001";
+            case "je"   : return "010";
+            case "jge"  : return "011";
+            case "jl"   : return "100";
+            case "jne"  : return "101";
+            case "jle"  : return "110";
+            default     : return "000";
+        }
     }
-
+    
     /**
      * Retorna o código binário de um valor decimal armazenado numa String.
      * @param  symbol valor numérico decimal armazenado em uma String.
