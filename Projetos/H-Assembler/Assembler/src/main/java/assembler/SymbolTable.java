@@ -30,7 +30,7 @@ public class SymbolTable {
      * @param  address símbolo a ser armazenado na tabela de símbolos.
      */
     public void addEntry(String symbol, int address) {
-
+        symbolTable.put(symbol, address);
     }
 
     /**
@@ -39,7 +39,11 @@ public class SymbolTable {
      * @return Verdadeiro se símbolo está na tabela de símbolos, Falso se não está na tabela de símbolos.
      */
     public Boolean contains(String symbol){
-    	return false;
+        if(symbolTable.get(symbol) != null){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     /**
@@ -48,7 +52,8 @@ public class SymbolTable {
      * @return valor numérico associado ao símbolo procurado.
      */
     public Integer getAddress(String symbol) {
-    	return null;
+
+    	return symbolTable.get(symbol);
     }
 
     /**
@@ -56,7 +61,16 @@ public class SymbolTable {
     * ref:
     */
     public void initialize() {
-        this.addEntry("R0", 0);
+        for (int i=0; i<16383; i++) {
+            this.addEntry("R"+i,i);
+        }
+
+        this.addEntry("SCREEN",16384);
+        this.addEntry("SP",0);
+        this.addEntry("LCL",1);
+        this.addEntry("ARG",2);
+        this.addEntry("THIS",3);
+        this.addEntry("THAT",4);
 
     }
 

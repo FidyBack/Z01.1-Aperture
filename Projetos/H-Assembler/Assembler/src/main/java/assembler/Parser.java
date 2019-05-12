@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Vector;
 
 /**
  * Encapsula o código de leitura. Carrega as instruções na linguagem assembly,
@@ -69,8 +70,9 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-    	return null;
-    }
+        return null;
+
+        }
 
     /**
      * Retorna o símbolo ou valor numérico da instrução passada no argumento.
