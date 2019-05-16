@@ -9,7 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Vector;
+import java.util.LinkedList;
 
 /**
  * Encapsula o código de leitura. Carrega as instruções na linguagem assembly,
@@ -18,12 +18,11 @@ import java.util.Vector;
  */
 public class Parser {
 
-    public String currentCommand = "";  // comando atual
+    private String currentCommand = "";  // comando atual
     public String inputFile;		    // arquivo de leitura
     public int lineNumber = 0;			// linha atual do arquivo (nao do codigo gerado)
     public String currentLine;			// linha de codigo atual
     private BufferedReader fileReader;  // leitor de arquivo
-
 
     /** Enumerator para os tipos de comandos do Assembler. */
     public enum CommandType {
@@ -48,9 +47,30 @@ public class Parser {
      * entrada o método retorna "Falso", senão retorna "Verdadeiro".
      * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
      */
-    public Boolean advance() {
-        // usar o fileReader.readLine();
-    	return null;
+    public Boolean advance() throws IOException {
+        String str = fileReader.readLine();
+        String[] array = str.split(" ");
+        if (str != null) {
+
+            for (String e : array) {
+                String[] arrayLetras = e.split("");
+                for (String i : arrayLetras) {
+                    if (i == ";") {
+                        // é comentário
+                        return false;
+                    }
+                    else {
+                        // n é comentário
+                        this.currentCommand = this.currentLine;
+                        return true;
+                    }
+                }
+            }
+        }
+        else{
+            return false;
+        }
+        return null;
     }
 
     /**
@@ -58,7 +78,7 @@ public class Parser {
      * @return a instrução atual para ser analilisada
      */
     public String command() {
-    	return null;
+    	return this.currentCommand;
     }
 
     /**
@@ -70,9 +90,18 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-        return null;
-
+        String [] array = command.split("");
+        int len = command.length();
+        if (array[0] == "l" && array[1] == "e" && array[2] == "a"){
+            return CommandType.A_COMMAND;
         }
+        else if (array[len] == ":"){
+            return CommandType.L_COMMAND;
+        }
+        else{
+            return CommandType.C_COMMAND;
+        }
+    }
 
     /**
      * Retorna o símbolo ou valor numérico da instrução passada no argumento.
@@ -81,7 +110,20 @@ public class Parser {
      * @return somente o símbolo ou o valor número da instrução.
      */
     public String symbol(String command) {
-    	return null;
+        String [] array = command.split("");
+        LinkedList<String> instruction = new LinkedList<>();
+        int e = 0;
+        for (int i=0 ; i < command.length() ; i++){
+            if (array[i] == "$"){
+                e = i;
+            }
+        }
+
+        while (array[e] != ",") {
+            instruction.add(array[e]);
+            e++;
+        }
+        return instruction.toString();
     }
 
     /**
@@ -91,17 +133,45 @@ public class Parser {
      * @return o símbolo da instrução (sem os dois pontos).
      */
     public String label(String command) {
-    	return null;
+        String [] array = command.split("");
+        LinkedList<String> instruction = new LinkedList<>();
+        for (int i=0 ; i <= array.length ; i ++ ){
+            if (array[i] != ":"){
+                instruction.add(array[i]);
+            }
+            else{
+                break;
+            }
+        }
+    	return instruction.toString();
     }
 
-    /**
+    /**ó
      * Separa os mnemônicos da instrução fornecida em tokens em um vetor de Strings.
      * Deve ser chamado somente quando CommandType () é C_COMMAND.
      * @param  command instrução a ser analisada.
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-    	return null;
+        String [] array = command.split("");
+        LinkedList<String> instruction = new LinkedList<>();
+        LinkedList<String> finalInstruction = new LinkedList<>();
+        for (int i=0 ; i <= array.length ; i ++ ){
+            if (array[i] != " " && array[i] != ","){
+                instruction.add(array[i]);
+            }
+            else{
+                finalInstruction.add(instruction.toString());
+                instruction = new LinkedList<>();
+            }
+        }
+
+        String [] finalArray = new String[finalInstruction.size()];
+        for (int i = 0 ; i <= finalInstruction.size(); i++){
+            finalArray[i] = finalInstruction.get(i);
+        }
+
+        return finalArray;
     }
 
     // fecha o arquivo de leitura

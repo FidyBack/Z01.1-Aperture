@@ -7,30 +7,29 @@
 ; ####################################################################
 
 INICIO:
-  leaw $0, %A
-  movw %A, %S
+  leaw $1, %A;
+  movw (%A), %D;
 
-  leaw $1, %A
-  movw (%A), %D
-  
-  leaw $3, %A
-  movw $0,(%A)
- 
-WHILE:
-  leaw $END, %A
-  je %D                         ; Salta se D == 0
-  nop
+  leaw $0, %A;
+  movw (%A), %S;
 
-  leaw $0, %A                       ; Incrementa S
-  movw (%A),%A
-  addw %S,%A,%S                       ; Decrementa D
-  decw %D
-  leaw $WHILE, %A
-  jmp                           ; Salto incondicional
-  nop                           ; No-Operation
-                                ; (necessário após jump)
+  leaw $2, %A;
+  movw %S, (%A);
 
-END:                            ; Loop infinito
+LOOP:
+  leaw $3, %A;
+  addw %S, %D, (%A);
 
-leaw $3, %A
-movw %S, (%A)
+  leaw $2, %A;
+  decw (%A);
+  movw (%A), %S;
+
+  leaw $END, %A;
+  je %S;
+  nop;
+
+  leaw $INICIO, %A;
+  jmp;
+  nop;
+
+END:
