@@ -15,6 +15,7 @@ WHILE:
 	leaw $END, %A
 	jg %D
 	nop
+	
 	negw %D
 	leaw $WHILE, %A
 
