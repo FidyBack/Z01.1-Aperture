@@ -1,7 +1,0 @@
-# vsim -wlf /home/tluigimm/Desktop/faculdade/Elementos\ de\ Sistemas/Z01.1-Aperture/vunit_out/test_output/lib.tb_nand.all_d9f40c4b9b8a853c92c00dd8a102ec369f48636d/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_nand(tb) -L vunit_lib -L lib -g/tb_nand/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/vunit_out/test_output/lib.tb_nand.all_d9f40c4b9b8a853c92c00dd8a102ec369f48636d/,tb path : /home/tluigimm/Desktop/faculdade/Elementos de Sistemas/Z01.1-Aperture/Projetos/C-LogicaCombinacional/tests/tst/,use_color : true" 
-# Start time: 14:22:28 on Mar 27,2019
-# ** Warning: Design size of 20825 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# Break in Subprogram stop at /usr/local/lib/python3.6/dist-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 13
-# Stopped at /usr/local/lib/python3.6/dist-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 13
