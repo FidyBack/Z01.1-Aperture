@@ -17,8 +17,68 @@ public class Code {
      */
     public static String dest(String[] mnemnonic) {
 
+        if (mnemnonic[0].equals("movw")) {
+            if (mnemnonic.length == 3) {
+                switch (mnemnonic[2]) {
+                    case "%A": return "1000";
+                    case "%D": return "0010";
+                    case "%S": return "0100";    
+                    case "(%A)": return "0001";    
+                    default: return "0000";
+                }
 
-    	return "";
+            } else if (mnemnonic.length == 4) {
+                switch (mnemnonic[2] + mnemnonic[3]) {
+                    case "(%A)(%A)": return "0001";
+                    case "%A%A": return "1000";
+                    case "%D%D": return "0010";
+                    case "%S%S": return "0100";
+                    case "%A%S": return "1100";
+                    case "%S%A": return "1100";
+                    case "%S%D": return "0110";
+                    case "%D%S": return "0110";
+                    case "%S(%A)": return "0101";                       
+                    case "(%A)%S": return "0101";                       
+                    case "%A(%A)": return "1001";                       
+                    case "(%A)%A": return "1001";                        
+                    case "%A%D": return "1010";                        
+                    case "%D%A": return "1010";                        
+                    case "%D(%A)": return "0011";              
+                    case "(%A)%D": return "0011";                    
+                    default: return "0000";                     
+                }
+            }
+
+        }
+        if (mnemnonic[0].equals("addw") ||
+            mnemnonic[0].equals("subw") ||
+            mnemnonic[0].equals("orw") ||
+            mnemnonic[0].equals("andw") ||
+            mnemnonic[0].equals("rsubw")) {
+
+            switch (mnemnonic[3]) {
+                case "%A": return "1000";                 
+                case "%D": return "0010";                 
+                case "%S": return "0100";                    
+                case "(%A)": return "0001";                    
+                default: return "0000";                   
+            }
+        }
+        if (mnemnonic[0].equals("incw") ||
+            mnemnonic[0].equals("decw") ||
+            mnemnonic[0].equals("notw") ||
+            mnemnonic[0].equals("negw")) {
+
+            switch (mnemnonic[1]) {
+                case "%A": return "1000";                    
+                case "%D": return "0010";                   
+                case "%S": return "0100";                   
+                case "(%A)": return "0001";                   
+                default: return "0000";                   
+            }
+        } else {
+            return "0000";
+        }
     }
 
     /**
@@ -27,9 +87,210 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
+        if (mnemnonic[0].equals("movw")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001100";
+                case "%A": return "000110000";
+                case "%S": return "001001100";
+                case "(%A)": return "010110000";
+                case "$1": return "000111111";
+                case "$-1": return "000111010";
+                case "$0": return "000101010";
+            }
+        }
+        
+        if (mnemnonic[0].equals("orw")) {
+            switch (mnemnonic[1] + mnemnonic[2]) {
+                case "%D%A": return "000010101";
+                case "%A%D": return "000010101";
+                case "%S%A": return "001010101";
+                case "%A%S": return "001010101";
+                case "%D(%A)": return "010010101";
+                case "(%A)%D": return "010010101";
+                case "%S(%A)": return "011010101";
+                case "(%A)%S": return "011010101";
+                case "%S%D": return "101010101";
+                case "%D%S": return "101010101";
+                default: return "000101010";
+            }
+        }
+        
+        if (mnemnonic[0].equals("andw")) {
+            switch (mnemnonic[1] + mnemnonic[2]) {
+                case "%D%A": return "000000000";
+                case "%A%D": return "000000000";
+                case "%S%A": return "001000000";
+                case "%A%S": return "001000000";
+                case "%D(%A)": return "010000000";
+                case "(%A)%D": return "010000000";
+                case "%S(%A)": return "011000000";
+                case "(%A)%S": return "011000000";
+                case "%S%D": return "101000000";
+                case "%D%S": return "101000000";
+                default: return "000101010";
+            }
+        }
+        
+        if (mnemnonic[0].equals("subw")) {
+            switch (mnemnonic[1] + mnemnonic[2]) {
+                case "%D%A": return "000010011";
+                case "%A%D": return "000000111";
+                case "%S%A": return "001010011";
+                case "%A%S": return "001000111";
+                case "%D(%A)": return "010010011";
+                case "(%A)%D": return "010000111";
+                case "%S(%A)": return "011010011";
+                case "(%A)%S": return "011000111";
+                case "%S%D": return "101010011";
+                case "%D%S": return "101000111";
+                case "%A$1": return "000110010";
+                case "%D$1": return "000001110";
+                case "%S$1": return "010001110";
+                case "(%A)$1": return "010110010";
+                default: return "000101010";
+            }
+        }
+        
+        if (mnemnonic[0].equals("addw")) {
+            switch ((mnemnonic[1] + mnemnonic[2])) {
+                case "%A%D": return "000000010";
+                case "%D%A": return "000000010";
+                case "%S%A": return "001000010";
+                case "%A%S": return "001000010";
+                case "%D(%A)": return "010000010";
+                case "(%A)%D": return "010000010";
+                case "%S(%A)": return "011000010";
+                case "(%A)%S": return "011000010";
+                case "%S%D": return "101000010";
+                case "%D%S": return "101000010";
+                case "%A$1": return "000110111";
+                case "%1$A": return "000110111";
+                case "%S$1": return "001011111";
+                case "%1$S": return "001011111";
+                case "%D$1": return "000011111";
+                case "%1$D": return "000011111";
+                case "(%A)$1": return "010110111";
+                case "%1($A)": return "010110111";
+            }
+        }
+        
+        if (mnemnonic[0].equals("decw")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001110";
+                case "%A": return "000110010";
+                case "(%A)": return "010110010";
+                case "%S": return "001001110";
+                default: return "000101010";
+            }
+        }
 
+        if (mnemnonic[0].equals("negw")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001111";
+                case "%A": return "000110011";
+                case "(%A)": return "010110011";
+                case "%S": return "001001111";
+            }
+        }
 
-    	return "";
+        if (mnemnonic[0].equals("incw")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000011111";
+                case "%S": return "001011111";
+                case "%A": return "000110111";
+                case "(%A)": return "010110111";
+                default: return "000101010";
+            }
+        }
+
+        if (mnemnonic[0].equals("notw")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001101";
+                case "%A": return "000110001";
+                case "%S": return "001001101";
+                case "(%A)": return "010110001";
+                default: return "000101010";
+            }
+        }
+        
+        if (mnemnonic[0].equals("jmp")) {
+            if (mnemnonic.length == 2) {
+                switch (mnemnonic[1]) {
+                    case "%D": return "000001100";
+                    case "%S": return "001001100";
+                }
+            } else {
+                return "000001100";
+            }
+        }
+        
+        if (mnemnonic[0].equals("jl")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001100";
+                case "%S": return "001001100";
+            }
+        }
+        if (mnemnonic[0].equals("jne")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001100";
+                case "%S": return "001001100";
+            }
+        }
+        if (mnemnonic[0].equals("jle")) {
+            if (mnemnonic.length == 2) {
+                switch (mnemnonic[1]) {
+                    case "%D": return "000001100";
+                    case "%S": return "001001100";
+                }
+            } else {
+                return "000000000";
+            }
+        }
+        
+        if (mnemnonic[0].equals("jg")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001100";
+                case "%S": return "001001100";
+            }
+        }
+        if (mnemnonic[0].equals("je")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001100";
+                case "%S": return "001001100";
+            }
+        }
+        if (mnemnonic[0].equals("jge")) {
+            switch (mnemnonic[1]) {
+                case "%D": return "000001100";
+                case "%S": return "001001100";
+            }
+        }
+        
+        if (mnemnonic[0].equals("nop")) {
+            return "000101010";
+        }
+        
+        if (mnemnonic[0].equals("rsubw")) {
+            switch (mnemnonic[1] + mnemnonic[2]) {
+                case "%D%A": return "000000111";
+                case "%A%D": return "000010011";
+                case "%S%A": return "001000111";
+                case "%A%S": return "001010011";
+                case "%D(%A)": return "010000111";
+                case "(%A)%D": return "010010011";
+                case "%S(%A)": return "011000111";
+                case "(%A)%S": return "011010011";
+                case "%S%D": return "101000111";
+                case "%D%S": return "101010011";
+                case "$1%A": return "000110010";
+                case "$1%D": return "000001110";
+                case "$1%S": return "010001110";
+                case "$1(%A)": return "010110010";
+                default: return "000101010";
+            }
+        } else {
+            return "000101010"; 
+        }
     }
 
     /**
@@ -37,12 +298,20 @@ public class Code {
      * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
+    
     public static String jump(String[] mnemnonic) {
-
-
-        return "";
+        switch (mnemnonic[0]){
+            case "jmp"  : return "111";
+            case "jg"   : return "001";
+            case "je"   : return "010";
+            case "jge"  : return "011";
+            case "jl"   : return "100";
+            case "jne"  : return "101";
+            case "jle"  : return "110";
+            default     : return "000";
+        }
     }
-
+    
     /**
      * Retorna o código binário de um valor decimal armazenado numa String.
      * @param  symbol valor numérico decimal armazenado em uma String.
