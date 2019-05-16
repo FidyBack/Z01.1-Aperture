@@ -50,11 +50,7 @@ public class Code {
             }
 
         }
-        if (mnemnonic[0].equals("addw") ||
-            mnemnonic[0].equals("subw") ||
-            mnemnonic[0].equals("orw") ||
-            mnemnonic[0].equals("andw") ||
-            mnemnonic[0].equals("rsubw")) {
+        if (mnemnonic[0].equals("addw") || mnemnonic[0].equals("subw") || mnemnonic[0].equals("orw") || mnemnonic[0].equals("andw") || mnemnonic[0].equals("rsubw")) {
 
             switch (mnemnonic[3]) {
                 case "%A": return "1000";                 
@@ -64,10 +60,7 @@ public class Code {
                 default: return "0000";                   
             }
         }
-        if (mnemnonic[0].equals("incw") ||
-            mnemnonic[0].equals("decw") ||
-            mnemnonic[0].equals("notw") ||
-            mnemnonic[0].equals("negw")) {
+        if (mnemnonic[0].equals("incw") || mnemnonic[0].equals("decw") || mnemnonic[0].equals("notw") || mnemnonic[0].equals("negw")) {
 
             switch (mnemnonic[1]) {
                 case "%A": return "1000";                    
