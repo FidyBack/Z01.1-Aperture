@@ -34,6 +34,7 @@ end entity;
 
 ARCHITECTURE logic OF MemoryIO IS
 
+
   component Screen is
     PORT(
       -- Sistema
@@ -82,7 +83,8 @@ ARCHITECTURE logic OF MemoryIO IS
       d   : in  STD_LOGIC_VECTOR (15 downto 0);
       q   : out STD_LOGIC_VECTOR (15 downto 0));
   end component;
-
+  
+  
   component Dmux4Way is
     port(
       a:   in  STD_LOGIC;
@@ -121,5 +123,4 @@ begin
 	LED <= regOutput(9 downto 0); 
 
 	novoSW <= "000000" & SW;
-
 END logic;
