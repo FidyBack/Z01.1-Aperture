@@ -17,4 +17,8 @@ function Main.main 0
 // caso contrario o computador vai
 // executar lixo de memoria.
 label while
+  push constant 123
+  push constant 23
+  add
+  pop temp 0
   goto while

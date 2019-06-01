@@ -61,7 +61,7 @@ public class SymbolTable {
     * ref:
     */
     public void initialize() {
-        for (int i=0; i<16383; i++) {
+        for (int i=0; i<16; i++) {
             this.addEntry("R"+i,i);
         }
 
