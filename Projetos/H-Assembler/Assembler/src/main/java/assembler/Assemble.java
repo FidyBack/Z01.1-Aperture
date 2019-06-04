@@ -3,28 +3,28 @@
  * Arquivo: Assemble.java
  * Created by Luciano <lpsoares@insper.edu.br>
  * Date: 04/02/2017
- *
+ * <p>
  * 2018 @ Rafael Corsi
  */
 
 package assembler;
 
 import java.io.*;
-import java.util.*;
 
 /**
  * Faz a geração do código gerenciando os demais módulos
  */
 public class Assemble {
-    private String inputFile;              // arquivo de entrada nasm
     File hackFile = null;                  // arquivo de saída hack
-    private PrintWriter outHACK = null;    // grava saida do código de máquina em Hack
     boolean debug;                         // flag que especifica se mensagens de debug são impressas
+    private String inputFile;              // arquivo de entrada nasm
+    private PrintWriter outHACK = null;    // grava saida do código de máquina em Hack
     private SymbolTable table;             // tabela de símbolos (variáveis e marcadores)
 
     /**
      * Retorna o código binário do mnemônico para realizar uma operação de cálculo.
-     * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
+     *
+     * @param mnemonic vetor de mnemônicos "instrução" a ser analisada.
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public Assemble(String inFile, String outFileHack, boolean debug) throws IOException {
@@ -40,10 +40,11 @@ public class Assemble {
      * primeiro passo para a construção da tabela de símbolos de marcadores (labels)
      * varre o código em busca de Símbolos novos Labels e Endereços de memórias
      * e atualiza a tabela de símbolos com os endereços.
-     *
+     * <p>
      * Dependencia : Parser, SymbolTable
      */
     public SymbolTable fillSymbolTable() throws FileNotFoundException, IOException {
+        //Verifica Labels comuns (com ":")
         Parser parser = new Parser(inputFile);
         Parser otherParser = new Parser(inputFile);
 
@@ -58,6 +59,35 @@ public class Assemble {
                 linha+=1;
             }
 
+        while (parser.advance()) {
+            if (parser.commandType(parser.command()).equals(Parser.CommandType.L_COMMAND)) {
+                String new_label = parser.label(parser.command());
+                table.addEntry(new_label, current_line);
+            } else {
+                current_line++;
+            }
+        }
+
+        //Verifica labels no meio de leaws
+        Parser parser2 = new Parser(inputFile);
+        int label_number = 16;
+
+        while (parser2.advance()) {
+            if (parser2.commandType(parser2.command()).equals(Parser.CommandType.A_COMMAND)) {
+                String symbol = parser2.symbol(parser2.command());
+                boolean numeric = true;
+                try {
+                    Double num = Double.parseDouble(symbol);
+                } catch (NumberFormatException e) {
+                    numeric = false;
+                }
+                if (!numeric) {
+                    if (!table.contains(symbol)) {
+                        table.addEntry(symbol, label_number);
+                        label_number++;
+                    }
+                }
+            }
         }
         int ind_marcacao=16;
 
@@ -86,13 +116,17 @@ public class Assemble {
      * Segundo passo para a geração do código de máquina
      * Varre o código em busca de instruções do tipo A, C
      * gerando a linguagem de máquina a partir do parse das instruções.
-     *
+     * <p>
      * Dependencias : Parser, Code
      */
-    public void generateMachineCode() throws FileNotFoundException, IOException{
+    public void generateMachineCode() throws FileNotFoundException, IOException {
         Parser parser = new Parser(inputFile);  // abre o arquivo e aponta para o começo
         String instruction  = null;
+<<<<<<< HEAD
 
+=======
+        String binary;
+>>>>>>> ec22d2dd5ae423763505cf17bee5364dbfd25202
         /**
          * Aqui devemos varrer o código nasm linha a linha
          * e gerar a string 'instruction' para cada linha
@@ -124,10 +158,9 @@ public class Assemble {
                     continue;
             }
             // Escreve no arquivo .hack a instrução
-            if(outHACK!=null) {
+            if (outHACK != null) {
                 outHACK.println(instruction);
             }
-            instruction = null;
         }
 
     }
@@ -136,7 +169,7 @@ public class Assemble {
      * Fecha arquivo de escrita
      */
     public void close() throws IOException {
-        if(outHACK!=null) {
+        if (outHACK != null) {
             outHACK.close();
         }
     }
@@ -145,11 +178,11 @@ public class Assemble {
      * Remove o arquivo de .hack se algum erro for encontrado
      */
     public void delete() {
-        try{
-            if(hackFile!=null) {
+        try {
+            if (hackFile != null) {
                 hackFile.delete();
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
