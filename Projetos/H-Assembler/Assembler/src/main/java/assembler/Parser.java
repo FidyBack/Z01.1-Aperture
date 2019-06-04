@@ -132,10 +132,15 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-        String replace = command.replace(",", " ");
+        String replace = command.replace(",", "");
         String[] finalArray = replace.split(" ");
 
-        return finalArray;
+        if (!commandType(command).equals(CommandType.L_COMMAND)){
+            return finalArray;
+        }
+        else{
+            return null;
+        }
     }
 
     // fecha o arquivo de leitura
