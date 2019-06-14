@@ -5,13 +5,21 @@ decw %A
 movw (%A), %D
 decw %A
 movw (%A), %S
+<<<<<<< HEAD
 subw %D, %S, %S
+=======
+subw %S, %D, %S
+>>>>>>> 1f5a80a0674b61598bf695c0e823e910839991cc
 movw %A, %D
 incw %D
 leaw $SP, %A
 movw %D, (%A)
 leaw $TRUE, %A
+<<<<<<< HEAD
 jg %S
+=======
+je %S
+>>>>>>> 1f5a80a0674b61598bf695c0e823e910839991cc
 nop
 leaw $0, %A
 movw %A, %S

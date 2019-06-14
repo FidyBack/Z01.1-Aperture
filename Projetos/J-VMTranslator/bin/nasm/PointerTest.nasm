@@ -9,6 +9,7 @@ movw (%A),%D
 incw %D
 movw %D,(%A)
 ; 1 - POP pointer 0
+<<<<<<< HEAD
 leaw $SP,%A
 movw (%A), %S
 decw %S
@@ -17,6 +18,17 @@ movw (%A), %A
 movw (%A), %S
 leaw $THIS,%A
 movw %S, (%A)
+=======
+leaw $THIS,%A
+movw (%A), %D
+leaw $SP, %A
+movw (%A), %A
+movw %D, (%A)
+leaw $SP,%A
+movw (%A),%A
+incw %A
+movw %A, (%A)
+>>>>>>> 1f5a80a0674b61598bf695c0e823e910839991cc
 ; 2 - PUSH constant 3040
 leaw $3040, %A
 movw %A,%D
@@ -28,6 +40,7 @@ movw (%A),%D
 incw %D
 movw %D,(%A)
 ; 3 - POP pointer 1
+<<<<<<< HEAD
 leaw $SP,%A
 movw (%A), %S
 decw %S
@@ -36,6 +49,17 @@ movw (%A), %A
 movw (%A), %S
 leaw $THAT,%A
 movw %S, (%A)
+=======
+leaw $THAT,%A
+movw (%A), %D
+leaw $SP, %A
+movw (%A), %A
+movw %D, (%A)
+leaw $SP,%A
+movw (%A),%A
+incw %A
+movw %A, (%A)
+>>>>>>> 1f5a80a0674b61598bf695c0e823e910839991cc
 ; 4 - PUSH constant 32
 leaw $32, %A
 movw %A,%D
