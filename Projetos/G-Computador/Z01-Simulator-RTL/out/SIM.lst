@@ -1,2 +1,1 @@
          ps                              clock        instruction           pcout        s_regDout        s_regSout        s_regAout  c_muxALUI_A  c_muxSD_ALU             outM  writeM              inM             
-       3000                                  1 000000000000000000 000000000000001 0000000000000000 0000000000000000 0000000000000000            1            1 0000000000000000       0 0000000000000000 
