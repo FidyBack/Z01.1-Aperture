@@ -193,7 +193,7 @@ public class Code {
             commands.add("decw %A");
             commands.add("movw (%A), %S");
 
-            commands.add("subw %S, %D, %S");
+            commands.add("subw %D, %S, %S");
 
             commands.add("movw %A, %D");
             commands.add("incw %D");
@@ -202,7 +202,7 @@ public class Code {
 
 
             commands.add("leaw $TRUE, %A");
-            commands.add("je %S");
+            commands.add("jg %S");
             commands.add("nop");
 
             commands.add("leaw $0, %A");
@@ -314,10 +314,8 @@ public class Code {
                 commands.add("movw %D,(%A)");
                 commands.add("movw (%A),%A");
                 commands.add("movw (%A),%S");
-
                 commands.add("leaw $"+ index +", %A");
                 commands.add("movw %A,%D");
-
                 commands.add("leaw $LCL, %A");
                 commands.add("movw (%A),%A");
                 commands.add("addw %A, %D, %A");
@@ -331,7 +329,6 @@ public class Code {
                 commands.add("movw %D,(%A)");
                 commands.add("movw (%A),%A");
                 commands.add("movw (%A),%D");
-
                 commands.add("leaw $ARG, %A");
                 commands.add("movw %D,(%A)");
 
@@ -377,7 +374,6 @@ public class Code {
                 commands.add("movw %D,(%A)");
                 commands.add("movw (%A),%A");
                 commands.add("movw (%A),%S");
-
                 commands.add("leaw $"+ (index + 16) +", %A");
                 commands.add("movw %A,%D");
                 commands.add("movw %D, (%A)");
@@ -392,34 +388,31 @@ public class Code {
                 commands.add("movw %D,(%A)");
                 commands.add("movw (%A),%A");
                 commands.add("movw (%A),%D");
-
                 commands.add("leaw $" + (5 + index) + ", %A");
                 commands.add("movw %D,(%A)");
 
             } else if (segment.equals("pointer")) {
                 if(index==0) {
 
-                    commands.add("leaw $THIS,%A");
-                    commands.add("movw (%A), %D");
-                    commands.add("leaw $SP, %A");
-                    commands.add("movw (%A), %A");
-                    commands.add("movw %D, (%A)");
                     commands.add("leaw $SP,%A");
-                    commands.add("movw (%A),%A");
-                    commands.add("incw %A");
-                    commands.add("movw %A, (%A)");
+                    commands.add("movw (%A), %S");
+                    commands.add("decw %S");
+                    commands.add("movw %S, (%A)");
+                    commands.add("movw (%A), %A");
+                    commands.add("movw (%A), %S");
+                    commands.add("leaw $THIS,%A");
+                    commands.add("movw %S, (%A)");
 
                 } else {
 
-                    commands.add("leaw $THAT,%A");
-                    commands.add("movw (%A), %D");
-                    commands.add("leaw $SP, %A");
-                    commands.add("movw (%A), %A");
-                    commands.add("movw %D, (%A)");
                     commands.add("leaw $SP,%A");
-                    commands.add("movw (%A),%A");
-                    commands.add("incw %A");
-                    commands.add("movw %A, (%A)");
+                    commands.add("movw (%A), %S");
+                    commands.add("decw %S");
+                    commands.add("movw %S, (%A)");
+                    commands.add("movw (%A), %A");
+                    commands.add("movw (%A), %S");
+                    commands.add("leaw $THAT,%A");
+                    commands.add("movw %S, (%A)");
 
                 }
             }
@@ -461,16 +454,13 @@ public class Code {
 
                 commands.add("leaw $"+ index +", %A");
                 commands.add("movw %A,%D");
-
                 commands.add("leaw $ARG,%A");
                 commands.add("movw (%A),%A");
                 commands.add("addw %A, %D, %A");
                 commands.add("movw (%A), %D");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%D");
                 commands.add("incw %D");
@@ -482,16 +472,13 @@ public class Code {
 
                 commands.add("leaw $"+ index +", %A");
                 commands.add("movw %A,%D");
-
                 commands.add("leaw $THIS,%A");
                 commands.add("movw (%A),%A");
                 commands.add("addw %A, %D, %A");
                 commands.add("movw (%A), %D");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%D");
                 commands.add("incw %D");
@@ -521,11 +508,9 @@ public class Code {
 
                 commands.add("leaw $"+ (index + 16) +", %A");
                 commands.add("movw %A,%D");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%D");
                 commands.add("incw %D");
@@ -536,11 +521,9 @@ public class Code {
 
                 commands.add("leaw $"+ var +", %A");
                 commands.add("movw (%A),%D");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%D");
                 commands.add("incw %D");
