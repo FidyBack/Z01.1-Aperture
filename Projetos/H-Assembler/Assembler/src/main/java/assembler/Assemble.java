@@ -11,6 +11,9 @@ package assembler;
 
 import java.io.*;
 
+/**
+ * Faz a geração do código gerenciando os demais módulos
+ */
 public class Assemble {
     File hackFile = null;                  // arquivo de saída hack
     boolean debug;                         // flag que especifica se mensagens de debug são impressas
@@ -18,7 +21,12 @@ public class Assemble {
     private PrintWriter outHACK = null;    // grava saida do código de máquina em Hack
     private SymbolTable table;             // tabela de símbolos (variáveis e marcadores)
 
-
+    /**
+     * Retorna o código binário do mnemônico para realizar uma operação de cálculo.
+     *
+     * @param mnemonic vetor de mnemônicos "instrução" a ser analisada.
+     * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
+     */
     public Assemble(String inFile, String outFileHack, boolean debug) throws IOException {
         this.debug = debug;
         inputFile  = inFile;
@@ -28,7 +36,13 @@ public class Assemble {
 
     }
 
-
+    /**
+     * primeiro passo para a construção da tabela de símbolos de marcadores (labels)
+     * varre o código em busca de Símbolos novos Labels e Endereços de memórias
+     * e atualiza a tabela de símbolos com os endereços.
+     * <p>
+     * Dependencia : Parser, SymbolTable
+     */
     public SymbolTable fillSymbolTable() throws FileNotFoundException, IOException {
         //Verifica Labels comuns (com ":")
         Parser parser = new Parser(inputFile);
@@ -36,41 +50,79 @@ public class Assemble {
 
         int linha=0;
 
-        while (parser.advance()) {
+        while (parser.advance()){
             boolean match = parser.commandType(parser.command()).equals(Parser.CommandType.L_COMMAND);
-            if (match) {
-                table.addEntry(parser.label(parser.command()).replace("$", ""), linha);
-            } else {
-                linha += 1;
+            if(match){
+                table.addEntry(parser.label(parser.command()).replace("$",""),linha);
+            }
+            else{
+                linha+=1;
             }
 
-        }
-        int ind_marcacao=16;
-
-        while (otherParser.advance()){
-            boolean othermatch =  otherParser.commandType(otherParser.command()).equals(Parser.CommandType.A_COMMAND);
-            if(othermatch){
-                try{
-                    Double num = Double.parseDouble(otherParser.symbol(otherParser.command()));
+            while (parser.advance()) {
+                if (parser.commandType(parser.command()).equals(Parser.CommandType.L_COMMAND)) {
+                    String new_label = parser.label(parser.command());
+                    table.addEntry(new_label, current_line);
+                } else {
+                    current_line++;
                 }
-                catch(NumberFormatException e){
-                    if(!table.contains(otherParser.symbol(otherParser.command()))){
-                        table.addEntry(otherParser.symbol(otherParser.command()).replace("$",""),ind_marcacao);
-                        ind_marcacao+=1;
+            }
+
+            //Verifica labels no meio de leaws
+            Parser parser2 = new Parser(inputFile);
+            int label_number = 16;
+
+            while (parser2.advance()) {
+                if (parser2.commandType(parser2.command()).equals(Parser.CommandType.A_COMMAND)) {
+                    String symbol = parser2.symbol(parser2.command());
+                    boolean numeric = true;
+                    try {
+                        Double num = Double.parseDouble(symbol);
+                    } catch (NumberFormatException e) {
+                        numeric = false;
+                    }
+                    if (!numeric) {
+                        if (!table.contains(symbol)) {
+                            table.addEntry(symbol, label_number);
+                            label_number++;
+                        }
                     }
                 }
             }
+            int ind_marcacao=16;
 
+            while (otherParser.advance()){
+                boolean othermatch =  otherParser.commandType(otherParser.command()).equals(Parser.CommandType.A_COMMAND);
+                if(othermatch){
+                    try{
+                        Double num = Double.parseDouble(otherParser.symbol(otherParser.command()));
+                    }
+                    catch(NumberFormatException e){
+                        if(!table.contains(otherParser.symbol(otherParser.command()))){
+                            table.addEntry(otherParser.symbol(otherParser.command()).replace("$",""),ind_marcacao);
+                            ind_marcacao+=1;
+                        }
+                    }
+                }
+
+            }
+
+
+
+            return table;
         }
 
-
-
-        return table;
-    }
+        /**
+         * Segundo passo para a geração do código de máquina
+         * Varre o código em busca de instruções do tipo A, C
+         * gerando a linguagem de máquina a partir do parse das instruções.
+         * <p>
+         * Dependencias : Parser, Code
+         */
         public void generateMachineCode() throws FileNotFoundException, IOException {
             Parser parser = new Parser(inputFile);  // abre o arquivo e aponta para o começo
             String instruction  = null;
-
+            String binary;
             /**
              * Aqui devemos varrer o código nasm linha a linha
              * e gerar a string 'instruction' para cada linha
@@ -95,6 +147,7 @@ public class Assemble {
                         else {
                             instruction = "00"+ Code.toBinary(parser.symbol(parser.command()));
                         }
+
 
                         break;
                     default:
