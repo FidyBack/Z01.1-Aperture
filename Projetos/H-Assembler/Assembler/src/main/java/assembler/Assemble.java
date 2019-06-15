@@ -62,9 +62,9 @@ public class Assemble {
         while (parser.advance()) {
             if (parser.commandType(parser.command()).equals(Parser.CommandType.L_COMMAND)) {
                 String new_label = parser.label(parser.command());
-                table.addEntry(new_label, current_line);
+                table.addEntry(new_label, linha;
             } else {
-                current_line++;
+                linha++;
             }
         }
 
@@ -122,11 +122,7 @@ public class Assemble {
     public void generateMachineCode() throws FileNotFoundException, IOException {
         Parser parser = new Parser(inputFile);  // abre o arquivo e aponta para o começo
         String instruction  = null;
-<<<<<<< HEAD
 
-=======
-        String binary;
->>>>>>> ec22d2dd5ae423763505cf17bee5364dbfd25202
         /**
          * Aqui devemos varrer o código nasm linha a linha
          * e gerar a string 'instruction' para cada linha
