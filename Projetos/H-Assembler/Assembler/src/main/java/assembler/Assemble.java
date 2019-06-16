@@ -59,53 +59,25 @@ public class Assemble {
                 linha+=1;
             }
 
-            while (parser.advance()) {
-                if (parser.commandType(parser.command()).equals(Parser.CommandType.L_COMMAND)) {
-                    String new_label = parser.label(parser.command());
-                    table.addEntry(new_label, current_line);
-                } else {
-                    current_line++;
+        }
+
+
+        int ind_marcacao=16;
+        while (otherParser.advance()){
+            boolean othermatch =  otherParser.commandType(otherParser.command()).equals(Parser.CommandType.A_COMMAND);
+            if(othermatch){
+                try{
+                    Double num = Double.parseDouble(otherParser.symbol(otherParser.command()));
+                }
+                catch(NumberFormatException e){
+                    if(!table.contains(otherParser.symbol(otherParser.command()))){
+                        table.addEntry(otherParser.symbol(otherParser.command()).replace("$",""),ind_marcacao);
+                        ind_marcacao+=1;
+                    }
                 }
             }
 
-            //Verifica labels no meio de leaws
-            Parser parser2 = new Parser(inputFile);
-            int label_number = 16;
-
-            while (parser2.advance()) {
-                if (parser2.commandType(parser2.command()).equals(Parser.CommandType.A_COMMAND)) {
-                    String symbol = parser2.symbol(parser2.command());
-                    boolean numeric = true;
-                    try {
-                        Double num = Double.parseDouble(symbol);
-                    } catch (NumberFormatException e) {
-                        numeric = false;
-                    }
-                    if (!numeric) {
-                        if (!table.contains(symbol)) {
-                            table.addEntry(symbol, label_number);
-                            label_number++;
-                        }
-                    }
-                }
-            }
-            int ind_marcacao=16;
-
-            while (otherParser.advance()){
-                boolean othermatch =  otherParser.commandType(otherParser.command()).equals(Parser.CommandType.A_COMMAND);
-                if(othermatch){
-                    try{
-                        Double num = Double.parseDouble(otherParser.symbol(otherParser.command()));
-                    }
-                    catch(NumberFormatException e){
-                        if(!table.contains(otherParser.symbol(otherParser.command()))){
-                            table.addEntry(otherParser.symbol(otherParser.command()).replace("$",""),ind_marcacao);
-                            ind_marcacao+=1;
-                        }
-                    }
-                }
-
-            }
+        }
 
 
 
@@ -122,7 +94,7 @@ public class Assemble {
         public void generateMachineCode() throws FileNotFoundException, IOException {
             Parser parser = new Parser(inputFile);  // abre o arquivo e aponta para o começo
             String instruction  = null;
-            String binary;
+          
             /**
              * Aqui devemos varrer o código nasm linha a linha
              * e gerar a string 'instruction' para cada linha
